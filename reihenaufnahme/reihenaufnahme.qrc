@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/reihenaufnahme">
+        <file alias="r0">resources/reihenaufnahme0.jpg</file>
+        <file alias="r1">resources/reihenaufnahme1.jpg</file>
+        <file alias="r2">resources/reihenaufnahme2.jpg</file>
+        <file alias="r3">resources/reihenaufnahme3.jpg</file>
+        <file alias="r4">resources/reihenaufnahme4.jpg</file>
+        <file alias="r5">resources/reihenaufnahme5.jpg</file>
+        <file alias="r6">resources/reihenaufnahme6.jpg</file>
+        <file alias="license.txt">resources/gpl-3.0.txt</file>
+        <file alias="plugins">resources/plugins.png</file>
+        <file alias="about.html">resources/about.html</file>
+        <file alias="authors.html">resources/authors.html</file>
+        <file alias="thanksto.html">resources/thanksto.html</file>
+    </qresource>
+</RCC>

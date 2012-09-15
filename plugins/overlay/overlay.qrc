@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/plugins/overlay">
+        <file alias="overlay">overlay.png</file>
+        <file alias="example">example.png</file>
+    </qresource>
+</RCC>
