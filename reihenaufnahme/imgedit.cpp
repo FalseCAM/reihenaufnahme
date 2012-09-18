@@ -16,31 +16,33 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PROCESS_H
-#define PROCESS_H
+#include "process.h"
+#include "plugins/pluginloader.h"
+#include "imgedit.h"
+#include "Qt/qthreadpool.h"
 
-#include <Qt/qthread.h>
-#include "image.h"
-
-class Process : public QThread
+ImgEdit::ImgEdit(Image *img)
 {
-    Q_OBJECT
-public:
-    explicit Process(QObject *parent = 0);
+    this->image = img;
+}
 
-    void stop();
-    
-signals:
-    void process(int value);
-    
-public slots:
-protected:
-    void run();
+void ImgEdit::run(){
+    edit(image);
+    out(image);
+}
 
-private:
-    bool stopped;
-    void finnish();
-    
-};
+void ImgEdit::edit(Image *image){
+    foreach(EditPlugin *editPlugin, PluginLoader::getInstance().getEditPlugins()){
+        if(PluginLoader::getInstance().isActivatedPlugin(editPlugin)){
+            editPlugin->edit(image);
+        }
+    }
+}
 
-#endif // PROCESS_H
+void ImgEdit::out(Image *image){
+    foreach(OutputPlugin *outputPlugin, PluginLoader::getInstance().getOutputPlugins()){
+        if(PluginLoader::getInstance().isActivatedPlugin(outputPlugin)){
+            outputPlugin->out(image);
+        }
+    }
+}

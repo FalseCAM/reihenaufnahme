@@ -18,6 +18,9 @@
 
 #include "process.h"
 #include "plugins/pluginloader.h"
+#include "imgedit.h"
+#include "Qt/qthreadpool.h"
+#include "Qt/qthread.h"
 
 Process::Process(QObject *parent) :
     QThread(parent)
@@ -30,16 +33,22 @@ void Process::run(){
     foreach(InputPlugin *inputPlugin, PluginLoader::getInstance().getInputPlugins()){
         if(PluginLoader::getInstance().isActivatedPlugin(inputPlugin)){
             inputPlugin->init();
+            QThreadPool threadPool(this);
+            threadPool.setMaxThreadCount(QThread::idealThreadCount());
+
             while(inputPlugin->hasNext()){
                 Image *img = inputPlugin->next();
-                edit(img);
-                out(img);
+
+                ImgEdit *imgEdit = new ImgEdit(img);
+                threadPool.start(imgEdit);
+
                 emit process(inputPlugin->getProgress());
                 if(stopped){
                     emit process(100);
                     return;
                 }
             }
+            threadPool.waitForDone();
         }
     }
     finnish();
@@ -47,24 +56,6 @@ void Process::run(){
 
 void Process::stop(){
     this->stopped = true;
-}
-
-void Process::edit(Image *image){
-    foreach(EditPlugin *editPlugin, PluginLoader::getInstance().getEditPlugins()){
-        if(stopped) return;
-        if(PluginLoader::getInstance().isActivatedPlugin(editPlugin)){
-            editPlugin->edit(image);
-        }
-    }
-}
-
-void Process::out(Image *image){
-    foreach(OutputPlugin *outputPlugin, PluginLoader::getInstance().getOutputPlugins()){
-        if(stopped) return;
-        if(PluginLoader::getInstance().isActivatedPlugin(outputPlugin)){
-            outputPlugin->out(image);
-        }
-    }
 }
 
 void Process::finnish(){

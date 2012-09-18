@@ -6,7 +6,7 @@ TEMPLATE = app
 INCLUDEPATH += C:\Dev\Qt5.0.0beta1\Desktop\Qt\5.0.0-beta1\msvc2010\include
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
+    mainwindow.cpp \
     tipsdialog.cpp \
     reihenaufnahme.cpp \
     translation.cpp \
@@ -15,7 +15,8 @@ SOURCES += main.cpp\
     plugins/pluginloader.cpp \
     plugins/pcpluginwidget.cpp \
     image.cpp \
-    process.cpp
+    process.cpp \
+    imgedit.cpp
 
 HEADERS  += mainwindow.h \
     tipsdialog.h \
@@ -30,7 +31,8 @@ HEADERS  += mainwindow.h \
     plugins/pcpluginwidget.h \
     plugins/editplugin.h \
     image.h \
-    process.h
+    process.h \
+    imgedit.h
 
 FORMS    += mainwindow.ui \
     tipsdialog.ui \

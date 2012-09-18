@@ -16,31 +16,29 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PROCESS_H
-#define PROCESS_H
+#ifndef IMGEDIT_H
+#define IMGEDIT_H
 
-#include <Qt/qthread.h>
+#include <Qt/qrunnable.h>
 #include "image.h"
 
-class Process : public QThread
-{
-    Q_OBJECT
-public:
-    explicit Process(QObject *parent = 0);
+/**
+ * @brief The ImgEdit class
+ *  This class is a thread to parallelize edit and out part of images.
+ */
 
-    void stop();
-    
-signals:
-    void process(int value);
-    
-public slots:
+class ImgEdit : public QRunnable
+{
+public:
+    explicit ImgEdit(Image *img);
 protected:
     void run();
 
 private:
-    bool stopped;
-    void finnish();
-    
+    Image *image;
+    void edit(Image *image);
+    void out(Image *image);
+
 };
 
 #endif // PROCESS_H

@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     Reihenaufnahme::setApplicationName("Reihenaufnahme");
-    Reihenaufnahme::setApplicationVersion("1.0.0");
+    Reihenaufnahme::setApplicationVersion("1.0.1");
     Reihenaufnahme::setOrganizationName("FalseCAM");
     a.setWindowIcon(Reihenaufnahme::applicationIcon());
     MainWindow w;
