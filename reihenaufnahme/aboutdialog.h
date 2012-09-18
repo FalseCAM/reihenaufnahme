@@ -19,7 +19,8 @@
 #ifndef ABOUTDIALOG_H
 #define ABOUTDIALOG_H
 
-#include <QDialog>
+#include <Qt/qdialog.h>
+#include <QtNetwork/QNetworkAccessManager>
 
 namespace Ui {
 class AboutDialog;
@@ -38,10 +39,12 @@ private slots:
 
 private:
     Ui::AboutDialog *ui;
+    QNetworkAccessManager *manager;
     void initLicense();
     void initAbout();
     void initAuthors();
     void initThanksto();
+    void initUpdates();
 };
 
 #endif // ABOUTDIALOG_H

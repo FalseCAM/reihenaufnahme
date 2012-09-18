@@ -1,9 +1,7 @@
 TARGET = reihenaufnahme
-QT       += core widgets
+QT       += core widgets network
 
 TEMPLATE = app
-
-INCLUDEPATH += C:\Dev\Qt5.0.0beta1\Desktop\Qt\5.0.0-beta1\msvc2010\include
 
 SOURCES += main.cpp\
     mainwindow.cpp \

@@ -19,8 +19,11 @@
 #include "aboutdialog.h"
 #include "ui_aboutdialog.h"
 #include "reihenaufnahme.h"
-#include <Qt/qfile.h>
-#include <Qt/qtextstream.h>
+#include <QtCore/QFile>
+#include <QtCore/QTextStream>
+#include <QtNetwork/QNetworkReply>
+#include <QtCore/QUrl>
+#include <QtCore/QEventLoop>
 
 AboutDialog::AboutDialog(QWidget *parent) :
     QDialog(parent),
@@ -32,11 +35,13 @@ AboutDialog::AboutDialog(QWidget *parent) :
     initAuthors();
     initThanksto();
     initLicense();
+    initUpdates();
 }
 
 AboutDialog::~AboutDialog()
 {
     delete ui;
+    delete manager;
 }
 
 void AboutDialog::initLicense(){
@@ -108,6 +113,18 @@ void AboutDialog::initThanksto(){
         }
     }
     ui->thankstoLabel->setText(text);
+}
+
+void AboutDialog::initUpdates(){
+    ui->thisVersionLabel->setText(tr("This Version: ") + Reihenaufnahme::applicationVersion());
+    manager = new QNetworkAccessManager(this);
+    QNetworkReply *reply = manager->get(QNetworkRequest(QUrl("http://reihenaufnahme.falsecam.net/version")));
+    QEventLoop loop;
+    QObject::connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
+    loop.exec();
+    ui->htmlVersionLabel->setText(reply->readAll());
+    QObject::disconnect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
+    delete reply;
 }
 
 void AboutDialog::on_pushButton_clicked()
