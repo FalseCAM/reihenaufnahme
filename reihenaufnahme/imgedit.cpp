@@ -19,7 +19,7 @@
 #include "process.h"
 #include "plugins/pluginloader.h"
 #include "imgedit.h"
-#include "Qt/qthreadpool.h"
+#include <QtCore/QThreadPool>
 
 ImgEdit::ImgEdit(Image *img)
 {

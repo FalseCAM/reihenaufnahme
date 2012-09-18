@@ -19,7 +19,7 @@
 #ifndef ABOUTDIALOG_H
 #define ABOUTDIALOG_H
 
-#include <Qt/qdialog.h>
+#include <QtWidgets/QDialog>
 #include <QtNetwork/QNetworkAccessManager>
 
 namespace Ui {

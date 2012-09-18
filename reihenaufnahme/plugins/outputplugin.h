@@ -19,9 +19,10 @@
 #ifndef OUTPUTPLUGIN_H
 #define OUTPUTPLUGIN_H
 
-#include <QtPlugin>
 #include "plugin.h"
 #include "../image.h"
+
+#include <QtCore/QtPlugin>
 
 class OutputPlugin: public Plugin{
 public:

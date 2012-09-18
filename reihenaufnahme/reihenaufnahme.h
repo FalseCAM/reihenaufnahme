@@ -19,11 +19,11 @@
 #ifndef REIHENAUFNAHME_H
 #define REIHENAUFNAHME_H
 
-#include <Qt/qobject.h>
-#include <Qt/qsettings.h>
-#include <Qt/qcoreapplication.h>
-#include <Qt/qtranslator.h>
-#include <Qt/qicon.h>
+#include <QtCore/QObject>
+#include <QtCore/QSettings>
+#include <QtCore/QCoreApplication>
+#include <QtCore/QTranslator>
+#include <QtGui/QIcon>
 
 class Reihenaufnahme : public QObject
 {

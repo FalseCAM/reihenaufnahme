@@ -19,9 +19,10 @@
 #ifndef INPUTPLUGIN_H
 #define INPUTPLUGIN_H
 
-#include <QtPlugin>
 #include "plugin.h"
 #include "../image.h"
+
+#include <QtCore/QtPlugin>
 
 class InputPlugin: public Plugin{
 public:

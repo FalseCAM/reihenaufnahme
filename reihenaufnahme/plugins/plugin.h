@@ -19,9 +19,9 @@
 #ifndef PLUGIN_H
 #define PLUGIN_H
 
-#include <Qt/qobject.h>
+#include <QtCore/QObject>
 #include <QtWidgets/QWidget>
-#include <Qt/qicon.h>
+#include <QtGui/QIcon>
 
 class Plugin: virtual public QObject{
 public:

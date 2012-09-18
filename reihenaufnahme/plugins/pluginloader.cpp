@@ -19,10 +19,11 @@
 #include "pluginloader.h"
 #include "../reihenaufnahme.h"
 #include "../translation.h"
-#include <Qt/qpluginloader.h>
-#include <Qt/qdir.h>
-#include <Qt/qsettings.h>
-#include <Qt/qstringlist.h>
+
+#include <QtCore/QPluginLoader>
+#include <QtCore/QDir>
+#include <QtCore/QSettings>
+#include <QtCore/QStringList>
 
 PluginLoader* PluginLoader::instance = 0;
 

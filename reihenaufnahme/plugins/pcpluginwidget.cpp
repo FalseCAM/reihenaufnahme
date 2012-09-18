@@ -18,8 +18,9 @@
 
 #include "pcpluginwidget.h"
 #include "ui_pcpluginwidget.h"
-#include <Qt/qpixmap.h>
 #include "pluginloader.h"
+
+#include <QtGui/QPixmap>
 
 PCPluginWidget::PCPluginWidget(Plugin *plugin) :
     ui(new Ui::PCPluginWidget)

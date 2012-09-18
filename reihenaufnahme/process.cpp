@@ -19,8 +19,9 @@
 #include "process.h"
 #include "plugins/pluginloader.h"
 #include "imgedit.h"
-#include "Qt/qthreadpool.h"
-#include "Qt/qthread.h"
+
+#include <QtCore/QThread>
+#include <QtCore/QThreadPool>
 
 Process::Process(QObject *parent) :
     QThread(parent)

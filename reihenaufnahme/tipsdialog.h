@@ -20,7 +20,7 @@
 #define TIPSDIALOG_H
 
 #include <QtWidgets/QDialog>
-#include <Qt/qstringlist.h>
+#include <QtCore/QStringList>
 
 namespace Ui {
 class TipsDialog;

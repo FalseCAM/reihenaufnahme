@@ -19,11 +19,12 @@
 #ifndef PLUGINLOADER_H
 #define PLUGINLOADER_H
 
-#include <Qt/qobject.h>
-#include <Qt/qlist.h>
 #include "inputplugin.h"
 #include "editplugin.h"
 #include "outputplugin.h"
+
+#include <QtCore/QObject>
+#include <QtCore/QList>
 
 class PluginLoader : public QObject
 {

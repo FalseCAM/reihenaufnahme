@@ -19,9 +19,9 @@
 #ifndef TRANSLATION_H
 #define TRANSLATION_H
 
-#include <Qt/qobject.h>
-#include <Qt/qstringlist.h>
-#include <QMultiMap>
+#include <QtCore/QObject>
+#include <QtCore/QStringList>
+#include <QtCore/QMultiMap>
 
 class Translation : public QObject
 {

@@ -18,8 +18,8 @@
 
 #include "reihenaufnahme.h"
 #include "plugins/pluginloader.h"
-#include <Qt/qcoreapplication.h>
 
+#include <QtCore/QCoreApplication>
 
 void Reihenaufnahme::setApplicationName(QString name){
     QCoreApplication::setApplicationName(name);

@@ -19,8 +19,8 @@
 #ifndef IMAGE_H
 #define IMAGE_H
 
-#include <Qt/qobject.h>
-#include <Qt/qimage.h>
+#include <QtCore/QObject>
+#include <QtGui/QImage>
 #include <exiv2/exiv2.hpp>
 
 class Image : public QObject

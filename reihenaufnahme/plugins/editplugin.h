@@ -19,9 +19,10 @@
 #ifndef EDITPLUGIN_H
 #define EDITPLUGIN_H
 
-#include <QtPlugin>
 #include "plugin.h"
 #include "../image.h"
+
+#include <QtCore/QtPlugin>
 
 class EditPlugin: public Plugin{
 public:

@@ -19,8 +19,9 @@
 #ifndef PCPLUGINWIDGET_H
 #define PCPLUGINWIDGET_H
 
-#include <Qt/qwidget.h>
 #include "plugin.h"
+
+#include <QtWidgets/QWidget>
 
 namespace Ui {
 class PCPluginWidget;

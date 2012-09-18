@@ -19,8 +19,8 @@
 #ifndef PROCESS_H
 #define PROCESS_H
 
-#include <Qt/qthread.h>
 #include "image.h"
+#include <QtCore/QThread>
 
 class Process : public QThread
 {

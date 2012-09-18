@@ -21,11 +21,11 @@
 
 #include "reihenaufnahme.h"
 
-#include <Qt/qfile.h>
-#include <Qt/qtextstream.h>
-#include <Qt/qsettings.h>
-#include <Qt/qicon.h>
-#include <Qt/qstyle.h>
+#include <QtCore/QFile>
+#include <QtCore/QTextStream>
+#include <QtCore/QSettings>
+#include <QtGui/QIcon>
+#include <QtWidgets/QStyle>
 
 TipsDialog::TipsDialog(QWidget *parent) :
     QDialog(parent),

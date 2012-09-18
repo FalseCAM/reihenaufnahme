@@ -17,11 +17,12 @@
  */
 
 #include "translation.h"
-#include <Qt/qdir.h>
-#include <Qt/qtranslator.h>
-#include <Qt/qdebug.h>
-#include <Qt/qcoreapplication.h>
 #include "reihenaufnahme.h"
+
+#include <QtCore/QDir>
+#include <QtCore/QTranslator>
+#include <QtCore/QCoreApplication>
+#include <QtCore/QDebug>
 
 Translation::Translation(QObject *parent) :
     QObject(parent)

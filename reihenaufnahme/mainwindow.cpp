@@ -26,7 +26,7 @@
 #include "plugins/pluginloader.h"
 
 #include <QtWidgets/QSplashScreen>
-#include <Qt/qtranslator.h>
+#include <QtCore/QTranslator>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

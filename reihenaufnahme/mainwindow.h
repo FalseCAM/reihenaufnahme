@@ -19,10 +19,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QtWidgets/QMainWindow>
-#include <Qt/qelapsedtimer.h>
 #include "translation.h"
 #include "process.h"
+
+#include <QtWidgets/QMainWindow>
+#include <QtCore/QElapsedTimer>
 
 namespace Ui {
 class MainWindow;

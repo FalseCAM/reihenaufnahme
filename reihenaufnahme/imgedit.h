@@ -19,8 +19,8 @@
 #ifndef IMGEDIT_H
 #define IMGEDIT_H
 
-#include <Qt/qrunnable.h>
 #include "image.h"
+#include <QtCore/QRunnable>
 
 /**
  * @brief The ImgEdit class
