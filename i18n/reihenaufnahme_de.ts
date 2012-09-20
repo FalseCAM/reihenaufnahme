@@ -9,7 +9,22 @@
         <translation>Über Reihenaufnahme</translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/aboutdialog.ui" line="105"/>
+        <location filename="../reihenaufnahme/aboutdialog.ui" line="173"/>
+        <source>Updates</source>
+        <translation>Updates</translation>
+    </message>
+    <message>
+        <location filename="../reihenaufnahme/aboutdialog.ui" line="179"/>
+        <source>This Version:</source>
+        <translation>Diese Version: </translation>
+    </message>
+    <message>
+        <location filename="../reihenaufnahme/aboutdialog.ui" line="193"/>
+        <source>&lt;a href=&quot;http://reihenaufnahme.falsecam.net/downloads&quot;&gt;Download site&lt;/a&gt;</source>
+        <translation>&lt;a href=&quot;http://reihenaufnahme.falsecam.net/downloads&quot;&gt;Download Seite&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../reihenaufnahme/aboutdialog.ui" line="207"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
@@ -29,19 +44,24 @@
         <translation>&lt;h1&gt;Reihenaufnahme&lt;/h1&gt;</translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/aboutdialog.ui" line="68"/>
+        <location filename="../reihenaufnahme/aboutdialog.ui" line="80"/>
         <source>Authors</source>
         <translation>Authoren</translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/aboutdialog.ui" line="73"/>
+        <location filename="../reihenaufnahme/aboutdialog.ui" line="113"/>
         <source>Thanks To</source>
         <translation>Dank an</translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/aboutdialog.ui" line="78"/>
+        <location filename="../reihenaufnahme/aboutdialog.ui" line="149"/>
         <source>License</source>
         <translation>Lizenz</translation>
+    </message>
+    <message>
+        <location filename="../reihenaufnahme/aboutdialog.cpp" line="119"/>
+        <source>This Version: </source>
+        <translation>Diese Version: </translation>
     </message>
 </context>
 <context>
@@ -216,12 +236,12 @@
 <context>
     <name>Translation</name>
     <message>
-        <location filename="../reihenaufnahme/translation.cpp" line="62"/>
+        <location filename="../reihenaufnahme/translation.cpp" line="63"/>
         <source>en</source>
         <translation>de</translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/translation.cpp" line="88"/>
+        <location filename="../reihenaufnahme/translation.cpp" line="89"/>
         <source>English</source>
         <translation>Deutsch</translation>
     </message>

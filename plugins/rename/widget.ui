@@ -7,44 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>240</width>
-    <height>320</height>
+    <height>351</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="2" column="0">
-    <widget class="QCheckBox" name="newNameCheckBox">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="text">
-      <string>new name</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>suffix:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>prefix:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QCheckBox" name="renameCheckBox">
-     <property name="text">
-      <string>rename</string>
-     </property>
-    </widget>
-   </item>
    <item row="6" column="0" colspan="3">
     <widget class="QGroupBox" name="groupBox">
      <property name="enabled">
@@ -105,6 +74,37 @@
      </layout>
     </widget>
    </item>
+   <item row="2" column="0">
+    <widget class="QCheckBox" name="newNameCheckBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>new name</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>suffix:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>prefix:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QCheckBox" name="renameCheckBox">
+     <property name="text">
+      <string>rename</string>
+     </property>
+    </widget>
+   </item>
    <item row="4" column="1" colspan="2">
     <widget class="QLineEdit" name="suffixLineEdit">
      <property name="enabled">
@@ -125,19 +125,6 @@
       <bool>false</bool>
      </property>
     </widget>
-   </item>
-   <item row="7" column="0">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
    </item>
    <item row="0" column="0">
     <spacer name="verticalSpacer_2">
@@ -160,6 +147,63 @@
      <property name="text">
       <string>example</string>
      </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="3">
+    <widget class="QGroupBox" name="exifGroupBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Exif - Date</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="prependExifCheckBox">
+        <property name="text">
+         <string>prepend</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="appendExifCheckBox">
+        <property name="text">
+         <string>append</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="exifLineEdit">
+        <property name="text">
+         <string notr="true">yyyy_dd</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox">
+        <item>
+         <property name="text">
+          <string notr="true">1900_12_31_23_59_59</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">1900_12_31</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">31_12_1900</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">31_12_23_59</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
   </layout>
@@ -291,6 +335,22 @@
     <hint type="destinationlabel">
      <x>142</x>
      <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>renameCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>exifGroupBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>119</x>
+     <y>158</y>
     </hint>
    </hints>
   </connection>

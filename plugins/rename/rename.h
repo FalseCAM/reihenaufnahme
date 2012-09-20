@@ -1,14 +1,11 @@
-/*
-    EasyImageSizer - Resize
-
-    EasyImageSizer plugin to Resize a QImage
-
-    Copyright (C) 2010  FalseCAM
+/**
+    This file is part of program Reihenaufnahme
+    Copyright (C) 2012  FalseCAM
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+    any later version.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -17,14 +14,14 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
+ */
 
 #ifndef RENAME_H
 #define RENAME_H
 
-#include <QtPlugin>
-#include <QObject>
-#include <QIcon>
+#include <QtCore/QtPlugin>
+#include <QtCore/QObject>
+#include <QtGui/QIcon>
 #include "plugins/editplugin.h"
 #include "widget.h"
 
@@ -50,6 +47,7 @@ public:
 
 private:
     Widget *widget;
+    QString getExifKey(QString key, Exiv2::ExifData *exifData);
 };
 
 #endif // RESNAME_H

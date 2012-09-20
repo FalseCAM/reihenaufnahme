@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0FC3F96D6EFB45AA8188CE196C4D35A3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_179B5F1C1FA4450AA5D8880D816AEFE0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -368,6 +374,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0FC3F96D6EFB45AA8188CE196C4D35A3"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\QtNetwork5.dll"
+            "TargetName" = "8:QtNetwork5.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_D387C1E78D234ABC9D4CE805D5D35E9C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_179B5F1C1FA4450AA5D8880D816AEFE0"
             {
             "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\i18n\\savefile_de.qm"
@@ -1306,15 +1332,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Reihenaufnahme"
-        "ProductCode" = "8:{B7C731D5-0C65-400E-983E-68914B53F4CF}"
-        "PackageCode" = "8:{61E4F512-E173-400E-9D99-EEE067041E63}"
+        "ProductCode" = "8:{72CC1620-F928-4AC7-8B96-4B78B0E708E4}"
+        "PackageCode" = "8:{48959D83-A0D1-49BC-BB73-F4ED7DCDED29}"
         "UpgradeCode" = "8:{EA80884D-384F-40B4-99C0-38768E859058}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.2"
         "Manufacturer" = "8:FalseCAM"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:reihenaufnahme.falsecam.net"
