@@ -28,12 +28,9 @@ Widget::Widget(QWidget *parent) :
     loadState();
     connect(ui->renameCheckBox, SIGNAL(toggled(bool)), this, SLOT(example()));
     connect(ui->newNameCheckBox, SIGNAL(toggled(bool)), this, SLOT(example()));
-    connect(ui->counterCheckBox, SIGNAL(toggled(bool)), this, SLOT(example()));
     connect(ui->newNameLineEdit, SIGNAL(editingFinished()), this, SLOT(example()));
     connect(ui->prefixLineEdit, SIGNAL(editingFinished()), this, SLOT(example()));
     connect(ui->suffixLineEdit, SIGNAL(editingFinished()), this, SLOT(example()));
-    connect(ui->startSpinBox, SIGNAL(valueChanged(int)), this, SLOT(example()));
-    connect(ui->decimalSpinBox, SIGNAL(valueChanged(int)), this, SLOT(example()));
     connect(ui->prependExifCheckBox, SIGNAL(toggled(bool)), this, SLOT(example()));
     connect(ui->appendExifCheckBox, SIGNAL(toggled(bool)), this, SLOT(example()));
     connect(ui->exifLineEdit, SIGNAL(textChanged(QString)), this, SLOT(example()));
@@ -55,11 +52,8 @@ void Widget::loadState(){
     ui->renameCheckBox->setChecked(settings.value("RenameUse", false).toBool());
     ui->newNameCheckBox->setChecked(settings.value("NewNameUse", false).toBool());
     ui->newNameLineEdit->setText(settings.value("NewName", "").toString());
-    ui->counterCheckBox->setChecked(settings.value("CounterUse", false).toBool());
     ui->prefixLineEdit->setText(settings.value("Prefix", "").toString());
     ui->suffixLineEdit->setText(settings.value("Suffix", "").toString());
-    ui->startSpinBox->setValue(settings.value("Start", 1).toInt());
-    ui->decimalSpinBox->setValue(settings.value("Decimals", 0).toInt());
     ui->exifLineEdit->setText(settings.value("DateFormat", "yyyy_MM_dd").toString());
     ui->prependExifCheckBox->setChecked(settings.value("PrependExif", false).toBool());
     ui->appendExifCheckBox->setChecked(settings.value("AppendExif", false).toBool());
@@ -74,11 +68,8 @@ void Widget::saveState(){
     settings.setValue("RenameUse", ui->renameCheckBox->isChecked());
     settings.setValue("NewNameUse", ui->newNameCheckBox->isChecked());
     settings.setValue("NewName", ui->newNameLineEdit->text());
-    settings.setValue("CounterUse", ui->counterCheckBox->isChecked());
     settings.setValue("Prefix", ui->prefixLineEdit->text());
     settings.setValue("Suffix", ui->suffixLineEdit->text());
-    settings.setValue("Start", ui->startSpinBox->value());
-    settings.setValue("Decimals", ui->decimalSpinBox->value());
     settings.setValue("DateFormat", ui->exifLineEdit->text());
     settings.setValue("PrependExif", ui->prependExifCheckBox->isChecked());
     settings.setValue("AppendExif", ui->appendExifCheckBox->isChecked());
@@ -101,10 +92,6 @@ bool Widget::isNewName(){
     return ui->newNameCheckBox->isChecked();
 }
 
-bool Widget::isCounter(){
-    return ui->counterCheckBox->isChecked();
-}
-
 QString Widget::getNewName(){
     return ui->newNameLineEdit->text();
 }
@@ -115,14 +102,6 @@ QString Widget::getPrefix(){
 
 QString Widget::getSuffix(){
     return ui->suffixLineEdit->text();
-}
-
-int Widget::getCounterStart(){
-    return ui->startSpinBox->value();
-}
-
-int Widget::getCounterDecimals(){
-    return ui->decimalSpinBox->value();
 }
 
 QString Widget::getDateFormat(){
@@ -144,9 +123,6 @@ void Widget::example(){
         if(!(getPrefix().isEmpty() && getSuffix().isEmpty())){
             text.prepend(getPrefix());
             text.append(getSuffix());
-        }
-        if(isCounter()){
-            text.append(QString("%1").arg(getCounterStart(), getCounterDecimals(), 10, QChar('0')) );
         }
     }
 

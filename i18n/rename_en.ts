@@ -4,12 +4,12 @@
 <context>
     <name>Rename</name>
     <message>
-        <location filename="../plugins/rename/rename.cpp" line="25"/>
+        <location filename="../plugins/rename/rename.cpp" line="38"/>
         <source>Rename</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/rename/rename.cpp" line="37"/>
+        <location filename="../plugins/rename/rename.cpp" line="50"/>
         <source>Plugin to rename images</source>
         <translation></translation>
     </message>
@@ -17,53 +17,63 @@
 <context>
     <name>Widget</name>
     <message>
-        <location filename="../plugins/rename/widget.ui" line="14"/>
-        <source>Form</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../plugins/rename/widget.ui" line="23"/>
+        <location filename="../plugins/rename/widget.ui" line="83"/>
         <source>new name</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/rename/widget.ui" line="30"/>
+        <location filename="../plugins/rename/widget.ui" line="90"/>
         <source>suffix:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/rename/widget.ui" line="37"/>
+        <location filename="../plugins/rename/widget.ui" line="97"/>
         <source>prefix:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/rename/widget.ui" line="44"/>
+        <location filename="../plugins/rename/widget.ui" line="104"/>
         <source>rename</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/rename/widget.ui" line="54"/>
+        <location filename="../plugins/rename/widget.ui" line="158"/>
+        <source>Exif - Date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../plugins/rename/widget.ui" line="164"/>
+        <source>prepend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../plugins/rename/widget.ui" line="171"/>
+        <source>append</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../plugins/rename/widget.ui" line="23"/>
         <source>counter</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/rename/widget.ui" line="60"/>
+        <location filename="../plugins/rename/widget.ui" line="29"/>
         <source>counter start:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/rename/widget.ui" line="67"/>
+        <location filename="../plugins/rename/widget.ui" line="36"/>
         <source>use counter</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/rename/widget.ui" line="74"/>
+        <location filename="../plugins/rename/widget.ui" line="43"/>
         <source>counter decimals:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/rename/widget.ui" line="161"/>
-        <location filename="../plugins/rename/widget.cpp" line="94"/>
+        <location filename="../plugins/rename/widget.ui" line="148"/>
+        <location filename="../plugins/rename/widget.cpp" line="133"/>
         <source>example</source>
         <translation></translation>
     </message>

@@ -4,23 +4,18 @@
 <context>
     <name>Resize</name>
     <message>
-        <location filename="../plugins/resize/resize.cpp" line="25"/>
+        <location filename="../plugins/resize/resize.cpp" line="38"/>
         <source>Resize</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/resize/resize.cpp" line="37"/>
+        <location filename="../plugins/resize/resize.cpp" line="50"/>
         <source>Plugin to resize images</source>
         <translation></translation>
     </message>
 </context>
 <context>
     <name>Widget</name>
-    <message>
-        <location filename="../plugins/resize/widget.ui" line="14"/>
-        <source>Form</source>
-        <translation></translation>
-    </message>
     <message>
         <location filename="../plugins/resize/widget.ui" line="88"/>
         <source>change nothing</source>

@@ -4,23 +4,18 @@
 <context>
     <name>OverlayText</name>
     <message>
-        <location filename="../plugins/overlay-text/overlay-text.cpp" line="25"/>
+        <location filename="../plugins/overlay-text/overlay-text.cpp" line="38"/>
         <source>Overlay Text</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/overlay-text/overlay-text.cpp" line="37"/>
+        <location filename="../plugins/overlay-text/overlay-text.cpp" line="50"/>
         <source>Plugin to overlay-text images</source>
         <translation></translation>
     </message>
 </context>
 <context>
     <name>Widget</name>
-    <message>
-        <location filename="../plugins/overlay-text/widget.ui" line="14"/>
-        <source>Form</source>
-        <translation></translation>
-    </message>
     <message>
         <location filename="../plugins/overlay-text/widget.ui" line="20"/>
         <source>Add  Text</source>
@@ -49,6 +44,11 @@
     <message>
         <location filename="../plugins/overlay-text/widget.ui" line="72"/>
         <source>Y position in %</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../plugins/overlay-text/widget.ui" line="99"/>
+        <source>Add Exif Date</source>
         <translation></translation>
     </message>
 </context>

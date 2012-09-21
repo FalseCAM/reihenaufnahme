@@ -16,11 +16,6 @@
 </context>
 <context>
     <name>Widget</name>
-    <message>
-        <location filename="../plugins/rotate/widget.ui" line="14"/>
-        <source>Form</source>
-        <translation></translation>
-    </message>
     <message utf8="true">
         <location filename="../plugins/rotate/widget.ui" line="20"/>
         <source>rotate 180° clockwise</source>

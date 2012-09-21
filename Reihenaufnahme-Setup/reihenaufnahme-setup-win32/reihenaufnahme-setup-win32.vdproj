@@ -75,6 +75,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_3D26DB52CA2E47EA912D61C15347D1D4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_4A03F1B37E654789B285C2745E1C61CD"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -154,6 +160,12 @@
         "Entry"
         {
         "MsmKey" = "8:_9C57A593A25543F98D1795873A7D8B9D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9D73411FF7C34C2E85A3C4852DDDA74C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -244,6 +256,12 @@
         "Entry"
         {
         "MsmKey" = "8:_DEF6C60CDC24410A9866000885D4AAEB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DF93EF95EE544FC3BE9F6B762FC0BA44"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -574,6 +592,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3D26DB52CA2E47EA912D61C15347D1D4"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\i18n\\rename-album_de.qm"
+            "TargetName" = "8:rename-album_de.qm"
+            "Tag" = "8:"
+            "Folder" = "8:_427B57E8CA804AF58B2FE0C2FF028AA3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4A03F1B37E654789B285C2745E1C61CD"
             {
             "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\plugins\\blur5.dll"
@@ -840,6 +878,26 @@
             "TargetName" = "8:blur_de.qm"
             "Tag" = "8:"
             "Folder" = "8:_427B57E8CA804AF58B2FE0C2FF028AA3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9D73411FF7C34C2E85A3C4852DDDA74C"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\plugins\\rename-album5.dll"
+            "TargetName" = "8:rename-album5.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_E999133241EA44B29718ADCE26370B65"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1138,6 +1196,26 @@
             {
             "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\i18n\\overlay_en.qm"
             "TargetName" = "8:overlay_en.qm"
+            "Tag" = "8:"
+            "Folder" = "8:_427B57E8CA804AF58B2FE0C2FF028AA3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DF93EF95EE544FC3BE9F6B762FC0BA44"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\i18n\\rename-album_en.qm"
+            "TargetName" = "8:rename-album_en.qm"
             "Tag" = "8:"
             "Folder" = "8:_427B57E8CA804AF58B2FE0C2FF028AA3"
             "Condition" = "8:"

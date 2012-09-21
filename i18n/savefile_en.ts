@@ -17,11 +17,6 @@
 <context>
     <name>Widget</name>
     <message>
-        <location filename="../plugins/savefile/widget.ui" line="14"/>
-        <source>Form</source>
-        <translation></translation>
-    </message>
-    <message>
         <location filename="../plugins/savefile/widget.ui" line="20"/>
         <source>change quality</source>
         <translation></translation>

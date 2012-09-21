@@ -17,27 +17,27 @@
 <context>
     <name>Widget</name>
     <message>
-        <location filename="../plugins/filechooser/widget.ui" line="14"/>
+        <location filename="../plugins/filechooser/widget.ui" line="17"/>
         <source>Form</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/filechooser/widget.ui" line="23"/>
+        <location filename="../plugins/filechooser/widget.ui" line="26"/>
         <source>clear list</source>
         <translation>lösche Liste</translation>
     </message>
     <message>
-        <location filename="../plugins/filechooser/widget.ui" line="30"/>
+        <location filename="../plugins/filechooser/widget.ui" line="33"/>
         <source>remove image</source>
         <translation>entferne Bild</translation>
     </message>
     <message>
-        <location filename="../plugins/filechooser/widget.ui" line="37"/>
+        <location filename="../plugins/filechooser/widget.ui" line="40"/>
         <source>show preview of chosen images</source>
         <translation>zeige Vorschaubilder</translation>
     </message>
     <message>
-        <location filename="../plugins/filechooser/widget.ui" line="44"/>
+        <location filename="../plugins/filechooser/widget.ui" line="47"/>
         <source>add image(s)</source>
         <translation>füge Bilder hinzu</translation>
     </message>

@@ -17,11 +17,6 @@
 <context>
     <name>Widget</name>
     <message>
-        <location filename="../plugins/overlay/widget.ui" line="14"/>
-        <source>Form</source>
-        <translation></translation>
-    </message>
-    <message>
         <location filename="../plugins/overlay/widget.ui" line="33"/>
         <source>...</source>
         <translation></translation>

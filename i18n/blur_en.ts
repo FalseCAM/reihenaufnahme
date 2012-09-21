@@ -4,23 +4,18 @@
 <context>
     <name>Blur</name>
     <message>
-        <location filename="../plugins/blur/blur.cpp" line="26"/>
+        <location filename="../plugins/blur/blur.cpp" line="39"/>
         <source>Blur</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/blur/blur.cpp" line="38"/>
+        <location filename="../plugins/blur/blur.cpp" line="51"/>
         <source>Plugin to blur images</source>
         <translation></translation>
     </message>
 </context>
 <context>
     <name>Widget</name>
-    <message>
-        <location filename="../plugins/blur/widget.ui" line="14"/>
-        <source>Form</source>
-        <translation></translation>
-    </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="23"/>
         <source>invert</source>
