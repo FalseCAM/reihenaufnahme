@@ -16,8 +16,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef RENAME_H
-#define RENAME_H
+#ifndef GEOTAG_H
+#define GEOTAG_H
 
 #include <QtCore/QtPlugin>
 #include <QtCore/QObject>
@@ -26,15 +26,15 @@
 #include "widget.h"
 
 
-class Rename : public EditPlugin
+class Geotag : public EditPlugin
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "reihenaufnahme.rename" FILE "rename.json")
+    Q_PLUGIN_METADATA(IID "reihenaufnahme.geotag" FILE "geotag.json")
     Q_INTERFACES(EditPlugin)
 
 public:
-    Rename();
-    ~Rename();
+    Geotag();
+    ~Geotag();
     QString getName();
     QString getTitle();
     QString getVersion();
@@ -47,7 +47,8 @@ public:
 
 private:
     Widget *widget;
-    QString getExifKey(QString key, Exiv2::ExifData *exifData);
+    void setExifKey(QString key, QString value, Exiv2::ExifData *exifData);
+    void setExifKeyRational(QString key, QString value, Exiv2::ExifData *exifData);
 };
 
-#endif // RENAME_H
+#endif // GEOTAG_H

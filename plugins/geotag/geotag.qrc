@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/geotag">
+        <file alias="geotag">geotag.png</file>
+    </qresource>
+</RCC>

@@ -56,8 +56,11 @@
      <property name="enabled">
       <bool>true</bool>
      </property>
+     <property name="toolTip">
+      <string>Exif data are informations like exposure time or camera model.</string>
+     </property>
      <property name="text">
-      <string>copy metadata</string>
+      <string>save exif data</string>
      </property>
      <property name="checked">
       <bool>true</bool>

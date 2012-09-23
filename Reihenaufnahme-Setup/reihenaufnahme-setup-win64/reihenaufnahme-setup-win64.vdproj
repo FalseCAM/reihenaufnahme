@@ -123,6 +123,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_5F8459FA673D416C8C7FD9D96E6311EF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6AA700A442044861873E072095A08F84"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -136,6 +142,12 @@
         "Entry"
         {
         "MsmKey" = "8:_6FCAADAAA5044440A7059AA27C550F11"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_761BC5B79DD2448B92DD034B4600F902"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -214,6 +226,12 @@
         "Entry"
         {
         "MsmKey" = "8:_B205E602096046A09ECF56AA71ADFB1E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B5866E62AD314C538FC9E5B7FCC4A167"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -746,6 +764,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5F8459FA673D416C8C7FD9D96E6311EF"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-64bit\\plugins\\geotag5.dll"
+            "TargetName" = "8:geotag5.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_4144802F23DF4B8FBC1498B9FD7F17A3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6AA700A442044861873E072095A08F84"
             {
             "SourcePath" = "8:..\\..\\..\\reihenaufnahme-64bit\\QtCore5.dll"
@@ -790,6 +828,26 @@
             {
             "SourcePath" = "8:..\\..\\..\\reihenaufnahme-64bit\\i18n\\savefile_en.qm"
             "TargetName" = "8:savefile_en.qm"
+            "Tag" = "8:"
+            "Folder" = "8:_31ABE9D008F048DEA461D16CFDBB1009"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_761BC5B79DD2448B92DD034B4600F902"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-64bit\\i18n\\geotag_de.qm"
+            "TargetName" = "8:geotag_de.qm"
             "Tag" = "8:"
             "Folder" = "8:_31ABE9D008F048DEA461D16CFDBB1009"
             "Condition" = "8:"
@@ -1052,6 +1110,26 @@
             "TargetName" = "8:icuuc49.dll"
             "Tag" = "8:"
             "Folder" = "8:_2B3888D7D37E4ABA81CC9849BE19B96A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B5866E62AD314C538FC9E5B7FCC4A167"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-64bit\\i18n\\geotag_en.qm"
+            "TargetName" = "8:geotag_en.qm"
+            "Tag" = "8:"
+            "Folder" = "8:_31ABE9D008F048DEA461D16CFDBB1009"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"

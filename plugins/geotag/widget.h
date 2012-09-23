@@ -16,38 +16,40 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef RENAME_H
-#define RENAME_H
+#ifndef WIDGET_H
+#define WIDGET_H
 
-#include <QtCore/QtPlugin>
-#include <QtCore/QObject>
-#include <QtGui/QIcon>
-#include "plugins/editplugin.h"
-#include "widget.h"
+#include <QtWidgets/QWidget>
+#include <QtCore/QDateTime>
+#include "map.h"
 
+namespace Ui {
+class Widget;
+}
 
-class Rename : public EditPlugin
+class Widget : public QWidget
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "reihenaufnahme.rename" FILE "rename.json")
-    Q_INTERFACES(EditPlugin)
-
+    
 public:
-    Rename();
-    ~Rename();
-    QString getName();
-    QString getTitle();
-    QString getVersion();
-    QString getAuthor();
-    QString getDescription();
-    QIcon getIcon();
-    QWidget *getWidget();
-
-    void edit(Image *image);
-
+    explicit Widget(QWidget *parent = 0);
+    ~Widget();
+    bool isGeotagChange();
+    qreal getLatitude();
+    qreal getLongitude();
+    
 private:
-    Widget *widget;
-    QString getExifKey(QString key, Exiv2::ExifData *exifData);
+    Ui::Widget *ui;
+    void loadState();
+    void saveState();
+
+    void latChanged(qreal lat);
+    void lngChanged(qreal lng);
+
+    Map *map;
+
+private slots:
+    void on_gotoButton_clicked();
 };
 
-#endif // RENAME_H
+#endif // WIDGET_H

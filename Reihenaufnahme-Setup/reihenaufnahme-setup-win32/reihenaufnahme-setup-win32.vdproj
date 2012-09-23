@@ -117,6 +117,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_61A923B0D5604754BEA27171BABA553D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_66D3B188A6194F7784C3BD5DC56BFA28"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -219,6 +225,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B372EF6D58184DA6BF2A08F08C7C6154"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B6D92687D8EE490CA6F4EB05708E2925"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -274,6 +286,12 @@
         "Entry"
         {
         "MsmKey" = "8:_EC0EE1D37C15423FB320BE7C4648C19C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F2F6A2E0D6A545CB9DE200CE5D389D43"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -732,6 +750,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_61A923B0D5604754BEA27171BABA553D"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\plugins\\geotag5.dll"
+            "TargetName" = "8:geotag5.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_E999133241EA44B29718ADCE26370B65"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_66D3B188A6194F7784C3BD5DC56BFA28"
             {
             "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\QtWidgets5.dll"
@@ -1072,6 +1110,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B372EF6D58184DA6BF2A08F08C7C6154"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\i18n\\geotag_de.qm"
+            "TargetName" = "8:geotag_de.qm"
+            "Tag" = "8:"
+            "Folder" = "8:_427B57E8CA804AF58B2FE0C2FF028AA3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B6D92687D8EE490CA6F4EB05708E2925"
             {
             "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\i18n\\resize_de.qm"
@@ -1258,6 +1316,26 @@
             "TargetName" = "8:overlay-text5.dll"
             "Tag" = "8:"
             "Folder" = "8:_E999133241EA44B29718ADCE26370B65"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F2F6A2E0D6A545CB9DE200CE5D389D43"
+            {
+            "SourcePath" = "8:..\\..\\..\\reihenaufnahme-32bit\\i18n\\geotag_en.qm"
+            "TargetName" = "8:geotag_en.qm"
+            "Tag" = "8:"
+            "Folder" = "8:_427B57E8CA804AF58B2FE0C2FF028AA3"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"

@@ -28,11 +28,16 @@
     </message>
     <message>
         <location filename="../plugins/savefile/widget.ui" line="60"/>
-        <source>copy metadata</source>
-        <translation></translation>
+        <source>Exif data are informations like exposure time or camera model.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../plugins/savefile/widget.ui" line="70"/>
+        <location filename="../plugins/savefile/widget.ui" line="63"/>
+        <source>save exif data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../plugins/savefile/widget.ui" line="73"/>
         <source>select folder</source>
         <translation></translation>
     </message>
