@@ -16,42 +16,32 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef WIDGET_H
-#define WIDGET_H
+#ifndef PHOTO_H
+#define PHOTO_H
 
-#include <QtWidgets/QWidget>
-
-namespace Ui {
-class Widget;
-}
-
-class Widget : public QWidget
+#include <QtCore/QObject>
+#include <QtCore/QJsonObject>
+class Photo : public QObject
 {
     Q_OBJECT
-    
 public:
-    explicit Widget(QWidget *parent = 0);
-    ~Widget();
+    explicit Photo(QObject *parent = 0);
+    Photo(const Photo &);
+    Photo(QJsonObject jobject);
 
-    bool isGrayscale();
-    bool isSwap();
-    bool isInvert();
-    bool isSepia();
+    QString getId();
+    QString getTitle();
+    QString getUrl(QString size);
     
-private slots:
-    void on_grayscaleCheckBox_toggled(bool checked);
-
-    void on_invertCheckBox_toggled(bool checked);
-
-    void on_swapCheckBox_toggled(bool checked);
-
-    void on_sepiaCheckBox_toggled(bool checked);
-
+signals:
+    
+public slots:
 private:
-    Ui::Widget *ui;
-    void loadState();
-    void saveState();
-    void updateImage();
+    QString id;
+    QString farm;
+    QString server;
+    QString secret;
+    QString title;
 };
 
-#endif // WIDGET_H
+#endif // PHOTO_H

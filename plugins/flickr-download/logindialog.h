@@ -16,42 +16,26 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef WIDGET_H
-#define WIDGET_H
+#ifndef LOGINDIALOG_H
+#define LOGINDIALOG_H
 
-#include <QtWidgets/QWidget>
+#include <QDialog>
 
 namespace Ui {
-class Widget;
+class LoginDialog;
 }
 
-class Widget : public QWidget
+class LoginDialog : public QDialog
 {
     Q_OBJECT
     
 public:
-    explicit Widget(QWidget *parent = 0);
-    ~Widget();
-
-    bool isGrayscale();
-    bool isSwap();
-    bool isInvert();
-    bool isSepia();
+    explicit LoginDialog(QWidget *parent = 0);
+    ~LoginDialog();
+    void setUrl(QString url);
     
-private slots:
-    void on_grayscaleCheckBox_toggled(bool checked);
-
-    void on_invertCheckBox_toggled(bool checked);
-
-    void on_swapCheckBox_toggled(bool checked);
-
-    void on_sepiaCheckBox_toggled(bool checked);
-
 private:
-    Ui::Widget *ui;
-    void loadState();
-    void saveState();
-    void updateImage();
+    Ui::LoginDialog *ui;
 };
 
-#endif // WIDGET_H
+#endif // LOGINDIALOG_H

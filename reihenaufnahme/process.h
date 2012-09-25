@@ -21,6 +21,7 @@
 
 #include "image.h"
 #include <QtCore/QThread>
+#include <QtGui/QImage>
 
 class Process : public QThread
 {
@@ -32,6 +33,7 @@ public:
     
 signals:
     void process(int value);
+    void processImage(QImage *image);
     
 public slots:
 protected:

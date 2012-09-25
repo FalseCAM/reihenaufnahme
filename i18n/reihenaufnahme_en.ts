@@ -68,7 +68,7 @@
     <name>MainWindow</name>
     <message>
         <location filename="../reihenaufnahme/mainwindow.ui" line="14"/>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="145"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="158"/>
         <source>Reihenaufnahme</source>
         <translation></translation>
     </message>
@@ -93,52 +93,52 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="97"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="104"/>
         <source>stop</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="137"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="150"/>
         <source>Help</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="165"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="178"/>
         <source>Tips</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="170"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="183"/>
         <source>About</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="175"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="188"/>
         <source>Quit</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="178"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="191"/>
         <source>Ctrl+Q</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="186"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="199"/>
         <source>Changes take effekt after restart.</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="195"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="208"/>
         <source>Plugins</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.ui" line="130"/>
+        <location filename="../reihenaufnahme/mainwindow.ui" line="143"/>
         <source>Language</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.cpp" line="176"/>
+        <location filename="../reihenaufnahme/mainwindow.cpp" line="177"/>
         <source>Finnished in %1 milliseconds.</source>
         <translation></translation>
     </message>

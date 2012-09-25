@@ -4,12 +4,12 @@
 <context>
     <name>Color</name>
     <message>
-        <location filename="../plugins/color/color.cpp" line="26"/>
+        <location filename="../plugins/color/color.cpp" line="39"/>
         <source>Color</source>
         <translation>Color</translation>
     </message>
     <message>
-        <location filename="../plugins/color/color.cpp" line="38"/>
+        <location filename="../plugins/color/color.cpp" line="51"/>
         <source>Plugin to invert color or grayscale image</source>
         <translation></translation>
     </message>

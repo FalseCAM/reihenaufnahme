@@ -57,6 +57,7 @@ MainWindow::MainWindow(QWidget *parent) :
     tips.showOnStartup();
     process = new Process();
     connect(process, SIGNAL(process(int)), ui->progressBar, SLOT(setValue(int)));
+    connect(process, SIGNAL(processImage(QImage*)), this, SLOT(updateProcessImage(QImage*)));
     connect(process, SIGNAL(finished()), this, SLOT(on_stopPushButton_clicked()));
     splash.finish(this);
 }
@@ -220,6 +221,10 @@ void MainWindow::on_outputPluginTabWidget_tabCloseRequested(int index)
         }
     }
     loadOutputPluginWidgets();
+}
+
+void MainWindow::updateProcessImage(QImage *image){
+    ui->processImageLabel->setPixmap(QPixmap().fromImage(*image).scaled(64,64));
 }
 
 void MainWindow::on_actionQuit_triggered()

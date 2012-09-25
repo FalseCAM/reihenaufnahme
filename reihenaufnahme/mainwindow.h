@@ -24,6 +24,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include <QtCore/QElapsedTimer>
+#include <QtGui/QImage>
 
 namespace Ui {
 class MainWindow;
@@ -57,6 +58,8 @@ private slots:
     void on_outputPluginTabWidget_tabCloseRequested(int index);
 
     void on_actionQuit_triggered();
+
+    void updateProcessImage(QImage *image);
 
 private:
     Ui::MainWindow *ui;

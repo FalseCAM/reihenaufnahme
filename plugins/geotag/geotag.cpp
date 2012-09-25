@@ -65,6 +65,10 @@ void Geotag::edit(Image *image){
     getWidget();
     if(widget->isGeotagChange()){
         Exiv2::ExifData *exifData = image->getExifData();
+        if(exifData == 0){
+            image->setExifData(new Exiv2::ExifData());
+            exifData = image->getExifData();
+        }
         char scratchBuf[100];
         long int deg, min;
         qreal lat = widget->getLatitude();
@@ -93,6 +97,7 @@ void Geotag::edit(Image *image){
 }
 
 void Geotag::setExifKey(QString key, QString value, Exiv2::ExifData *exifData){
+    if(exifData == 0) return;
     try {
         // Create a ASCII string value (note the use of create)
         Exiv2::Value::AutoPtr v = Exiv2::Value::create(Exiv2::asciiString);
@@ -107,6 +112,7 @@ void Geotag::setExifKey(QString key, QString value, Exiv2::ExifData *exifData){
 }
 
 void Geotag::setExifKeyRational(QString key, QString value, Exiv2::ExifData *exifData){
+    if(exifData == 0) return;
     try {
         // Create a ASCII string value (note the use of create)
         Exiv2::URationalValue::AutoPtr v(new Exiv2::URationalValue);

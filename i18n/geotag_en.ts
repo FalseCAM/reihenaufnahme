@@ -22,27 +22,33 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/geotag/widget.ui" line="47"/>
+        <location filename="../plugins/geotag/widget.ui" line="27"/>
+        <location filename="../plugins/geotag/widget.ui" line="40"/>
+        <source>00.000000; </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../plugins/geotag/widget.ui" line="53"/>
         <source>GPSLatitude:</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/geotag/widget.ui" line="54"/>
+        <location filename="../plugins/geotag/widget.ui" line="60"/>
         <source>goto</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/geotag/widget.ui" line="63"/>
+        <location filename="../plugins/geotag/widget.ui" line="69"/>
         <source>zoom in</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/geotag/widget.ui" line="70"/>
+        <location filename="../plugins/geotag/widget.ui" line="76"/>
         <source>zoom out</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugins/geotag/widget.ui" line="92"/>
+        <location filename="../plugins/geotag/widget.ui" line="98"/>
         <source>Change Geotag in Exif data</source>
         <translation></translation>
     </message>

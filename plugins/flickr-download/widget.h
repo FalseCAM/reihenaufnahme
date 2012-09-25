@@ -20,6 +20,8 @@
 #define WIDGET_H
 
 #include <QtWidgets/QWidget>
+#include "photo.h"
+#include "flickr.h"
 
 namespace Ui {
 class Widget;
@@ -32,26 +34,27 @@ class Widget : public QWidget
 public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
-
-    bool isGrayscale();
-    bool isSwap();
-    bool isInvert();
-    bool isSepia();
+    QList<Photo> getPhotos();
+    QString getSize();
+    bool isNameId();
+    bool isNameTitle();
     
 private slots:
-    void on_grayscaleCheckBox_toggled(bool checked);
 
-    void on_invertCheckBox_toggled(bool checked);
+    void on_userNameLineEdit_editingFinished();
 
-    void on_swapCheckBox_toggled(bool checked);
-
-    void on_sepiaCheckBox_toggled(bool checked);
+    void on_loginButton_clicked();
 
 private:
     Ui::Widget *ui;
+
+    Flickr flickr;
+
+    QStringList filesList;
+    QList<Photo> photos;
+    QString lastFolder;
     void loadState();
     void saveState();
-    void updateImage();
 };
 
 #endif // WIDGET_H

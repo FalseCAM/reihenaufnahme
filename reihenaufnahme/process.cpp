@@ -39,7 +39,7 @@ void Process::run(){
 
             while(inputPlugin->hasNext()){
                 Image *img = inputPlugin->next();
-
+                emit processImage(img->getImage());
                 ImgEdit *imgEdit = new ImgEdit(img);
                 threadPool.start(imgEdit);
 

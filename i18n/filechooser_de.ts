@@ -4,12 +4,12 @@
 <context>
     <name>FileChooser</name>
     <message>
-        <location filename="../plugins/filechooser/filechooser.cpp" line="27"/>
+        <location filename="../plugins/filechooser/filechooser.cpp" line="40"/>
         <source>Filechooser</source>
         <translation>Dateiauswahl</translation>
     </message>
     <message>
-        <location filename="../plugins/filechooser/filechooser.cpp" line="39"/>
+        <location filename="../plugins/filechooser/filechooser.cpp" line="52"/>
         <source>Plugin to load images from desktop.</source>
         <translation>Plugin um Bilder vom Desktop zu laden</translation>
     </message>
@@ -42,7 +42,7 @@
         <translation>füge Bilder hinzu</translation>
     </message>
     <message>
-        <location filename="../plugins/filechooser/widget.cpp" line="101"/>
+        <location filename="../plugins/filechooser/widget.cpp" line="119"/>
         <source>Please select a file</source>
         <translation>Bitte Datei wählen</translation>
     </message>

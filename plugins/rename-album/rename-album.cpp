@@ -86,6 +86,7 @@ void RenameAlbum::edit(Image *image){
 
 QString RenameAlbum::getExifKey(QString key, Exiv2::ExifData *exifData){
     // returns string represented by exif key
+    if(exifData == 0) return QString();
     QString ret;
     try {
         Exiv2::ExifData::iterator pos = exifData->findKey(

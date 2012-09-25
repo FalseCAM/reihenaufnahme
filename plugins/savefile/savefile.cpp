@@ -65,7 +65,8 @@ void SaveFile::out(Image *image){
         image->getImage()->save(file, qPrintable(widget->getImageFormat()));
     }
     if(widget->getCopyMetaData()){
-        saveExifData(image->getExifData(), file);
+        if(image->getExifData() != 0)
+            saveExifData(image->getExifData(), file);
     }
 }
 
