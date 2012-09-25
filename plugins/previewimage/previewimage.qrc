@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/previewimage">
+        <file alias="previewimage">previewimage.png</file>
+    </qresource>
+</RCC>

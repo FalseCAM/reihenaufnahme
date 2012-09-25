@@ -16,34 +16,33 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PHOTO_H
-#define PHOTO_H
+#ifndef WIDGET_H
+#define WIDGET_H
 
-#include <QtCore/QObject>
-#include <QtCore/QJsonObject>
-class Photo : public QObject
+#include <QtWidgets/QWidget>
+#include <QtCore/QDateTime>
+
+namespace Ui {
+class Widget;
+}
+
+class Widget : public QWidget
 {
     Q_OBJECT
+    
 public:
-    explicit Photo(QObject *parent = 0);
-    Photo(const Photo &);
-    Photo(QJsonObject jobject);
+    explicit Widget(QWidget *parent = 0);
+    ~Widget();
 
-    QString getId();
-    QString getTitle();
-    QString getUrl(QString size);
-    
-    QString getOwner();
-signals:
-    
-public slots:
+    bool isUpdate();
+    bool isRemove();
+
 private:
-    QString id;
-    QString farm;
-    QString server;
-    QString secret;
-    QString title;
-    QString owner;
+    Ui::Widget *ui;
+    void loadState();
+    void saveState();
+
+private slots:
 };
 
-#endif // PHOTO_H
+#endif // WIDGET_H

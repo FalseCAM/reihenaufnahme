@@ -91,7 +91,12 @@ Image *FlickrDownload::next(){
         QByteArray array = reply->readAll();
         QImage *image = new QImage();
         image->loadFromData(array);
-        QString album = "flickr";
+        QString album;
+        if(photo.getOwner().isEmpty()){
+            album = "flickr";
+        } else {
+            album = photo.getOwner();
+        }
         QString name;
         if(widget->isNameId()){
             name = photo.getId();

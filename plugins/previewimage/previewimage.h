@@ -16,34 +16,39 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PHOTO_H
-#define PHOTO_H
+#ifndef PREVIEWIMAGE_H
+#define PREVIEWIMAGE_H
 
+#include <QtCore/QtPlugin>
 #include <QtCore/QObject>
-#include <QtCore/QJsonObject>
-class Photo : public QObject
+#include <QtGui/QIcon>
+#include "plugins/editplugin.h"
+#include "widget.h"
+#include <exiv2/preview.hpp>
+
+
+class Previewimage : public EditPlugin
 {
     Q_OBJECT
-public:
-    explicit Photo(QObject *parent = 0);
-    Photo(const Photo &);
-    Photo(QJsonObject jobject);
+    Q_PLUGIN_METADATA(IID "reihenaufnahme.previewimage" FILE "previewimage.json")
+    Q_INTERFACES(EditPlugin)
 
-    QString getId();
+public:
+    Previewimage();
+    ~Previewimage();
+    QString getName();
     QString getTitle();
-    QString getUrl(QString size);
-    
-    QString getOwner();
-signals:
-    
-public slots:
+    QString getVersion();
+    QString getAuthor();
+    QString getDescription();
+    QIcon getIcon();
+    QWidget *getWidget();
+
+    void edit(Image *image);
+
 private:
-    QString id;
-    QString farm;
-    QString server;
-    QString secret;
-    QString title;
-    QString owner;
+    Widget *widget;
+    QString getExifKey(QString key, Exiv2::ExifData *exifData);
 };
 
-#endif // PHOTO_H
+#endif // PREVIEWIMAGE_H

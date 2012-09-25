@@ -40,6 +40,7 @@ signals:
 public slots:
     QJsonDocument getJsonDocument(QUrl url);
     QString getIdByUsername(QString username);
+    QString getUsernameById(QString id);
     QList<Photo> getPublicPhotosByUserId(QString userid);
     QList<Photo> getPhotosByUserId(QString userid);
     // auth

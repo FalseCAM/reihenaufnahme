@@ -29,6 +29,7 @@ Photo::Photo(const Photo & p){
     this->server = p.server;
     this->secret = p.secret;
     this->title = p.title;
+    this->owner = p.owner;
 }
 
 Photo::Photo(QJsonObject jobject){
@@ -37,6 +38,7 @@ Photo::Photo(QJsonObject jobject){
     this->server = jobject.take("server").toString();
     this->secret = jobject.take("secret").toString();
     this->title = jobject.take("title").toString();
+    this->owner = jobject.take("ownername").toString();
 }
 
 QString Photo::getId(){
@@ -45,6 +47,10 @@ QString Photo::getId(){
 
 QString Photo::getTitle(){
     return this->title;
+}
+
+QString Photo::getOwner(){
+    return this->owner;
 }
 
 QString Photo::getUrl(QString size){

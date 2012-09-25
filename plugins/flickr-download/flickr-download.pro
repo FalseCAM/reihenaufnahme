@@ -1,7 +1,6 @@
 TARGET          = flickr-download
 load(qt_plugin)
 QT              += core widgets network webkit
-CONFIG  -= debug
 INCLUDEPATH	+= ../../reihenaufnahme
 
 HEADERS         = flickr-download.h \

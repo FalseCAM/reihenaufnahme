@@ -69,6 +69,28 @@ QString Flickr::getIdByUsername(QString username){
     return id;
 }
 
+QString Flickr::getUsernameById(QString id){
+    QString username;
+
+    QMap<QString, QString> parameter;
+    parameter.insert("method", "flickr.people.getInfo");
+    parameter.insert("api_key", api_key);
+    parameter.insert("user_id", id);
+    parameter.insert("format", "json");
+    parameter.insert("nojsoncallback", "1");
+    QString sig = getSig(parameter);
+    parameter.insert("api_sig", sig);
+    QUrl url = QUrl(getRequestUrl(parameter));
+
+    QJsonDocument document = getJsonDocument(url);
+    if(document.isObject()){
+        username = document.object().take("person").toObject().take("username").toString();
+    } else {
+        username ="";
+    }
+    return username;
+}
+
 QList<Photo> Flickr::getPublicPhotosByUserId(QString userid){
     QList<Photo> photos;
     QMap<QString, QString> parameter;
@@ -76,12 +98,12 @@ QList<Photo> Flickr::getPublicPhotosByUserId(QString userid){
     parameter.insert("api_key", api_key);
     parameter.insert("user_id", userid);
     parameter.insert("per_page", "1000");
+    parameter.insert("extras", "owner_name");
     parameter.insert("format", "json");
     parameter.insert("nojsoncallback", "1");
     QString sig = getSig(parameter);
     parameter.insert("api_sig", sig);
     QUrl url = QUrl(getRequestUrl(parameter));
-
     QJsonDocument document = getJsonDocument(url);
     QJsonArray array = document.object().take("photos").toObject().take("photo").toArray();
     foreach(QJsonValue photo_, array){
@@ -99,6 +121,7 @@ QList<Photo> Flickr::getPhotosByUserId(QString userid){
     parameter.insert("auth_token", token);
     parameter.insert("user_id", userid);
     parameter.insert("per_page", "1000");
+    parameter.insert("extras", "owner_name");
     parameter.insert("format", "json");
     parameter.insert("nojsoncallback", "1");
     QString sig = getSig(parameter);
