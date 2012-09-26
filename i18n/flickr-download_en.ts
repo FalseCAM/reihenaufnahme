@@ -30,11 +30,6 @@
 <context>
     <name>Widget</name>
     <message>
-        <location filename="../plugins/flickr-download/widget.ui" line="17"/>
-        <source>Form</source>
-        <translation></translation>
-    </message>
-    <message>
         <location filename="../plugins/flickr-download/widget.ui" line="23"/>
         <source>size</source>
         <translation></translation>

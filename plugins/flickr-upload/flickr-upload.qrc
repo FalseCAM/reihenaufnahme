@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/flickr-upload">
+        <file alias="flickr">flickr.png</file>
+    </qresource>
+</RCC>

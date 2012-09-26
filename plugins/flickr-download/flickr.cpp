@@ -17,6 +17,7 @@
  */
 
 #include "flickr.h"
+#include <QtCore/QBuffer>
 #include <QtCore/QEventLoop>
 #include <QtNetwork/QNetworkReply>
 #include <QtCore/QJsonArray>
@@ -175,7 +176,7 @@ void Flickr::genToken(){
     QUrl url = QUrl(getRequestUrl(parameter));
 
     QJsonDocument document = getJsonDocument(url);
-    if(document.isObject()){qDebug("%s", qPrintable(document.toJson()));
+    if(document.isObject()){
         QJsonObject auth = document.object().take("auth").toObject();
         token = auth.take("token").toObject()
                 .take("_content").toString();
@@ -207,12 +208,12 @@ QString Flickr::getRequestUrl(QMap<QString, QString> parameter){
     return url;
 }
 
-QString Flickr::getAuthUrl(){
+QString Flickr::getAuthUrl(QString perms){
     genFrob();
     QMap<QString, QString> parameter;
     parameter.insert("api_key", api_key);
     parameter.insert("frob", getFrob());
-    parameter.insert("perms", "read");
+    parameter.insert("perms", perms);
     QString sig = getSig(parameter);
     parameter.insert("api_sig", sig);
     QString url = "http://flickr.com/services/auth/?";
@@ -232,4 +233,116 @@ QString Flickr::getSig(QMap<QString, QString> parameter){
     }
     QByteArray hash = QCryptographicHash::hash(sig.toUtf8(), QCryptographicHash::Md5);
     return hash.toHex();
+}
+
+/*
+ * Some code from QtFlickr: http://www.qtflickr.com/
+ */
+
+void Flickr::uploadImage(QByteArray *image, QString name, QString description, bool friendsVisible){
+    QByteArray boundary = genBoundary();
+    QByteArray payload;
+    QDataStream dataStream ( &payload, QIODevice::WriteOnly );
+
+    QMap<QString,QString> map;
+    map.insert ( "api_key", this->api_key );
+    map.insert ( "auth_token", this->token );
+    map.insert ( "title", name );
+    map.insert ( "description", description);
+    map.insert ( "is_public" , "0");
+    if(friendsVisible)
+        map.insert("is_friend", "1");
+    else
+        map.insert ( "is_friend", "0");
+
+    QMapIterator<QString, QString> i ( map );
+    QStringList keyList;
+    while ( i.hasNext() )
+    {
+        i.next();
+        keyList << i.key();
+    }
+    qSort ( keyList.begin(), keyList.end() );
+
+    QString apiSig = getSig(map);
+
+    // create fields
+    for ( int i = 0; i < keyList.size(); ++i )
+    {
+        QByteArray field = constructField ( keyList.at ( i ),map.value ( keyList.at ( i ) ),boundary );
+        dataStream.writeRawData ( field.data(), field.length() );
+
+    }
+
+    QByteArray sigField = constructField ( "api_sig", apiSig, boundary );
+    dataStream.writeRawData ( sigField.data(), sigField.length() );
+
+    QByteArray fileField = constructField ( "photo", "", boundary, name + ".jpg" );
+    dataStream.writeRawData ( fileField.data(), fileField.length() );
+
+    dataStream.writeRawData( image->data(), image->length());
+
+    QByteArray endField;
+    endField.append ( "\r\n--" );
+    endField.append ( boundary );
+    endField.append ( "--\r\n\r\n" );
+    dataStream.writeRawData ( endField.data(), endField.length() );
+
+    QString urlTmp("http://api.flickr.com/services/");
+    urlTmp.append("upload/");
+
+    QNetworkRequest uploadRequest ( urlTmp );
+    uploadRequest.setRawHeader ( "Content-Type","multipart/form-data; boundary="+boundary );
+    uploadRequest.setRawHeader ( "Host","ww.api.flickr.com" );
+
+    QNetworkAccessManager manager(this);
+    QNetworkReply *reply = manager.post ( uploadRequest , payload );
+    QEventLoop loop;
+    QObject::connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
+    loop.exec();
+}
+
+QByteArray Flickr::genBoundary()
+{
+    const int lenght = 15;
+    QChar unicode[lenght];
+    for ( int i = 0; i < lenght; ++i )
+    {
+        int sel = qrand() % 2;
+        int temp = ( sel ) ? qrand() % 9 + 49 : qrand() % 23 + 98;
+        unicode[i] = QChar ( temp );
+    }
+
+    int size = sizeof ( unicode ) / sizeof ( QChar );
+    QString str = QString::fromRawData ( unicode, size );
+
+    return str.toLatin1();
+}
+
+QByteArray Flickr::constructField ( QString name,
+                                             QString content,
+                                             QByteArray boundary,
+                                             QString filename )
+{
+    QByteArray data;
+    data.append ( "--" );
+    data.append ( boundary );
+    data.append ( "\r\n" );
+    data.append ( "Content-Disposition: form-data; name=\"" );
+    data.append ( name );
+    if ( filename.isEmpty() )
+    {
+        data.append ( "\"\r\n\r\n" );
+        data.append ( content );
+        data.append ( "\r\n" );
+    }
+    else
+    {
+        data.append ( "\"; filename=\"" );
+        data.append ( filename );
+        data.append ( "\"\r\n" );
+        data.append ( "Content-Type: image/jpeg\r\n\r\n" );
+    }
+
+    return data;
 }

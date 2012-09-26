@@ -26,6 +26,7 @@
 #include <QtCore/QStringList>
 #include <QtCore/QMap>
 #include "photo.h"
+#include "image.h"
 #include "logindialog.h"
 
 class Flickr : public QObject
@@ -52,7 +53,10 @@ public slots:
 
     QString getSig(QMap<QString, QString> parameter);
     QString getRequestUrl(QMap<QString, QString> parameter);
-    QString getAuthUrl();
+    QString getAuthUrl(QString perms);
+    void uploadImage(QByteArray *image, QString name, QString description, bool friendsVisible);
+
+
 
 private:
     QString api_key;
@@ -62,7 +66,11 @@ private:
     QString currentUser;
     QString currentUserId;
     QNetworkAccessManager *manager;
-    
+
+    QByteArray genBoundary();
+    QByteArray constructField ( QString name, QString content,
+                                QByteArray boundary,
+                                QString filename = QString());
 };
 
 #endif // FLICKR_H

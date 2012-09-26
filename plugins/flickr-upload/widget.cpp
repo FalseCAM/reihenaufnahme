@@ -18,22 +18,17 @@
 
 #include "widget.h"
 #include "ui_widget.h"
-#include "logindialog.h"
-#include <QtCore/QSettings>
 #include <QtCore/QDir>
-#include <QtCore/QFile>
 #include <QtWidgets/QFileDialog>
-#include <QtGui/QImageReader>
-#include <QtCore/QUrl>
-#include <QtCore/QMimeData>
-#include <QtCore/QMap>
+#include <QtGui/QImageWriter>
+#include <QtCore/QSettings>
+#include "../flickr-download/logindialog.h"
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    setAcceptDrops(true);
     loadState();
 }
 
@@ -45,61 +40,48 @@ Widget::~Widget()
 
 void Widget::loadState(){
     QSettings settings(QCoreApplication::organizationName(),
-                       QCoreApplication::applicationName());
+            QCoreApplication::applicationName());
     settings.beginGroup("plugins");
-    settings.beginGroup("FlickrDownload");
-
-    this->lastFolder = QDir::homePath();
+    settings.beginGroup("FlickrUpload");
+    ui->exifCheckBox->setChecked(settings.value("Exif", false).toBool());
+    ui->friendsCheckBox->setChecked(settings.value("Friends", false).toBool());
 }
 
 void Widget::saveState(){
     QSettings settings(QCoreApplication::organizationName(),
-                       QCoreApplication::applicationName());
+            QCoreApplication::applicationName());
     settings.beginGroup("plugins");
-    settings.beginGroup("FlickrDownload");
+    settings.beginGroup("FlickrUpload");
+    settings.setValue("Exif", ui->exifCheckBox->isChecked());
+    settings.setValue("Friends", ui->friendsCheckBox->isChecked());
 }
 
-QList<Photo> Widget::getPhotos(){
-    return photos;
+void Widget::updatePixmap(QImage *image){
+    ui->uploadingImageLabel->setPixmap(QPixmap().fromImage(*image).scaled(256,256));
 }
 
-QString Widget::getSize(){
-    QString size = "b";
-    if(ui->sizeMidButton->isChecked()){
-        size = "z";
-    }else if(ui->sizeThumbnailButton->isChecked()){
-        size = "t";
-    }
-    return size;
+Flickr *Widget::getFlickr(){
+    return &this->flickr;
 }
 
-void Widget::on_userNameLineEdit_editingFinished()
-{
-    if(flickr.getToken().isEmpty()){
-        this->photos = flickr.getPublicPhotosByUserId(flickr.getIdByUsername(ui->userNameLineEdit->text()));
-    }else{
-        this->photos = flickr.getPhotosByUserId(flickr.getIdByUsername(ui->userNameLineEdit->text()));
-    }
-    ui->photosListWidget->clear();
-    foreach(Photo photo, photos){
-        ui->photosListWidget->addItem(photo.getTitle());
-    }
+bool Widget::isFriendsVisible(){
+    return ui->friendsCheckBox->isChecked();
+}
+
+QString Widget::getDescription(){
+    return ui->descriptionLineEdit->text();
+}
+
+bool Widget::isExif(){
+    return ui->exifCheckBox->isChecked();
 }
 
 void Widget::on_loginButton_clicked()
 {
     LoginDialog loginDialog;
-    loginDialog.setUrl(flickr.getAuthUrl("read"));
+    loginDialog.setUrl(flickr.getAuthUrl("write"));
     if(loginDialog.exec() == 1){
         flickr.genToken();
         ui->currentUserLabel->setText(flickr.getCurrentUser());
     }
-}
-
-bool Widget::isNameId(){
-    return ui->idRadioButton->isChecked();
-}
-
-bool Widget::isNameTitle(){
-    return ui->titleRadioButton->isChecked();
 }
