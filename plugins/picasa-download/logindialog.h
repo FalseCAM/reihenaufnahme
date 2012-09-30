@@ -16,20 +16,26 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <QtWidgets/QApplication>
-#include "mainwindow.h"
-#include "reihenaufnahme.h"
-#include "translation.h"
+#ifndef LOGINDIALOG_H
+#define LOGINDIALOG_H
 
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    Reihenaufnahme::setApplicationName("Reihenaufnahme");
-    Reihenaufnahme::setApplicationVersion("1.0.4");
-    Reihenaufnahme::setOrganizationName("FalseCAM");
-    a.setWindowIcon(Reihenaufnahme::applicationIcon());
-    MainWindow w;
-    w.show();
-    
-    return a.exec();
+#include <QDialog>
+
+namespace Ui {
+class LoginDialog;
 }
+
+class LoginDialog : public QDialog
+{
+    Q_OBJECT
+    
+public:
+    explicit LoginDialog(QWidget *parent = 0);
+    ~LoginDialog();
+    void setUrl(QString url);
+    
+private:
+    Ui::LoginDialog *ui;
+};
+
+#endif // LOGINDIALOG_H

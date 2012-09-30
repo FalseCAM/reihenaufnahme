@@ -16,20 +16,21 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <QtWidgets/QApplication>
-#include "mainwindow.h"
-#include "reihenaufnahme.h"
-#include "translation.h"
+#include "logindialog.h"
+#include "ui_logindialog.h"
 
-int main(int argc, char *argv[])
+LoginDialog::LoginDialog(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::LoginDialog)
 {
-    QApplication a(argc, argv);
-    Reihenaufnahme::setApplicationName("Reihenaufnahme");
-    Reihenaufnahme::setApplicationVersion("1.0.4");
-    Reihenaufnahme::setOrganizationName("FalseCAM");
-    a.setWindowIcon(Reihenaufnahme::applicationIcon());
-    MainWindow w;
-    w.show();
-    
-    return a.exec();
+    ui->setupUi(this);
+}
+
+LoginDialog::~LoginDialog()
+{
+    delete ui;
+}
+
+void LoginDialog::setUrl(QString url){
+    ui->webView->load(QUrl(url));
 }

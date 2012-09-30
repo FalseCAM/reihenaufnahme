@@ -16,8 +16,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef FLICKRUPLOAD_H
-#define FLICKRUPLOAD_H
+#ifndef PICASAUPLOAD_H
+#define PICASAUPLOAD_H
 
 #include <QtCore/QtPlugin>
 #include <QtCore/QObject>
@@ -26,15 +26,15 @@
 #include "plugins/outputplugin.h"
 
 
-class FlickrUpload : public OutputPlugin
+class PicasaUpload : public OutputPlugin
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "reihenaufnahme.flickr-upload" FILE "flickr-upload.json")
+    Q_PLUGIN_METADATA(IID "reihenaufnahme.picasa-upload" FILE "picasa-upload.json")
     Q_INTERFACES(OutputPlugin)
 
 public:
-    FlickrUpload();
-    ~FlickrUpload();
+    PicasaUpload();
+    ~PicasaUpload();
     QString getName();
     QString getTitle();
     QString getVersion();
@@ -51,4 +51,4 @@ private:
     void saveExifData(Exiv2::ExifData *exifData, QByteArray *image);
 };
 
-#endif // FLICKRUPLOAD_H
+#endif // PICASAUPLOAD_H

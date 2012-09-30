@@ -16,25 +16,32 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef FLICKRUPLOAD_H
-#define FLICKRUPLOAD_H
+#ifndef PICASADOWNLOAD_H
+#define PICASADOWNLOAD_H
 
 #include <QtCore/QtPlugin>
 #include <QtCore/QObject>
 #include <QtGui/QIcon>
+#include <QtNetwork/QNetworkAccessManager>
+#include <QtCore/QList>
+#include "plugins/inputplugin.h"
+#include "image.h"
 #include "widget.h"
-#include "plugins/outputplugin.h"
 
+/*
+ * Icon from: http://findicons.com/icon/73719/picasa
+ * Designer: Jeremy Roux
+ */
 
-class FlickrUpload : public OutputPlugin
+class PicasaDownload : public InputPlugin
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "reihenaufnahme.flickr-upload" FILE "flickr-upload.json")
-    Q_INTERFACES(OutputPlugin)
+    Q_PLUGIN_METADATA(IID "reihenaufnahme.picasa-download" FILE "picasa-download.json")
+    Q_INTERFACES(InputPlugin)
 
 public:
-    FlickrUpload();
-    ~FlickrUpload();
+    PicasaDownload();
+    ~PicasaDownload();
     QString getName();
     QString getTitle();
     QString getVersion();
@@ -43,12 +50,21 @@ public:
     QIcon getIcon();
     QWidget *getWidget();
 
-    void out(Image *image);
-    void finnish();
+    void init();
+    bool hasNext();
+    Image *next();
+    int getProgress();
 
 private:
     Widget *widget;
-    void saveExifData(Exiv2::ExifData *exifData, QByteArray *image);
+    bool has_next;
+    QList<Photo> photos;
+    int position;
+    QNetworkAccessManager *manager;
+
+    QString getFolder(QString file);
+    QString getName(QString file);
+    Exiv2::ExifData *readExifData(QString file);
 };
 
-#endif // FLICKRUPLOAD_H
+#endif // PICASADOWNLOAD_H

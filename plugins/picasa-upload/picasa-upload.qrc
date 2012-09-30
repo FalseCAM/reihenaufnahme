@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/plugins/picasa-download">
+        <file alias="googlecrt">accounts.google.crt</file>
+        <file alias="picasacrt">picasa.crt</file>
+    </qresource>
+    <qresource prefix="/plugins/picasa-upload">
+        <file alias="picasa">picasa.png</file>
+    </qresource>
+</RCC>

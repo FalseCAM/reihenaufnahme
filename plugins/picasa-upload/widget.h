@@ -16,20 +16,41 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <QtWidgets/QApplication>
-#include "mainwindow.h"
-#include "reihenaufnahme.h"
-#include "translation.h"
+#ifndef WIDGET_H
+#define WIDGET_H
 
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    Reihenaufnahme::setApplicationName("Reihenaufnahme");
-    Reihenaufnahme::setApplicationVersion("1.0.4");
-    Reihenaufnahme::setOrganizationName("FalseCAM");
-    a.setWindowIcon(Reihenaufnahme::applicationIcon());
-    MainWindow w;
-    w.show();
-    
-    return a.exec();
+#include <QtWidgets/QWidget>
+#include <QtGui/QImage>
+#include "../picasa-download/picasa.h"
+
+namespace Ui {
+class Widget;
 }
+
+class Widget : public QWidget
+{
+    Q_OBJECT
+    
+public:
+    explicit Widget(QWidget *parent = 0);
+    ~Widget();
+
+    Picasa *getPicasa();
+    void updatePixmap(QImage *image);
+    bool isExif();
+    
+private slots:
+
+    void on_loginButton_clicked();
+
+    void on_activeButton_clicked();
+
+private:
+    Ui::Widget *ui;
+    void loadState();
+    void saveState();
+
+    Picasa picasa;
+};
+
+#endif // WIDGET_H

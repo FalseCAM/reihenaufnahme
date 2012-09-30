@@ -16,20 +16,31 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <QtWidgets/QApplication>
-#include "mainwindow.h"
-#include "reihenaufnahme.h"
-#include "translation.h"
+#ifndef ALBUMWIDGET_H
+#define ALBUMWIDGET_H
 
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    Reihenaufnahme::setApplicationName("Reihenaufnahme");
-    Reihenaufnahme::setApplicationVersion("1.0.4");
-    Reihenaufnahme::setOrganizationName("FalseCAM");
-    a.setWindowIcon(Reihenaufnahme::applicationIcon());
-    MainWindow w;
-    w.show();
-    
-    return a.exec();
+#include <QtWidgets/QWidget>
+#include "album.h"
+
+namespace Ui {
+class AlbumWidget;
 }
+
+class AlbumWidget : public QWidget
+{
+    Q_OBJECT
+    
+public:
+    AlbumWidget(QWidget *parent = 0);
+    AlbumWidget(Album *album);
+    ~AlbumWidget();
+    Album *getAlbum();
+    bool isChecked();
+private:
+    Ui::AlbumWidget *ui;
+    Album *album;
+
+    QPixmap getPixmap(QString url);
+};
+
+#endif // ALBUMWIDGET_H

@@ -16,20 +16,33 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <QtWidgets/QApplication>
-#include "mainwindow.h"
-#include "reihenaufnahme.h"
-#include "translation.h"
+#ifndef PHOTO_H
+#define PHOTO_H
 
-int main(int argc, char *argv[])
+#include <QtCore/QObject>
+#include <QtCore/QJsonObject>
+class Photo : public QObject
 {
-    QApplication a(argc, argv);
-    Reihenaufnahme::setApplicationName("Reihenaufnahme");
-    Reihenaufnahme::setApplicationVersion("1.0.4");
-    Reihenaufnahme::setOrganizationName("FalseCAM");
-    a.setWindowIcon(Reihenaufnahme::applicationIcon());
-    MainWindow w;
-    w.show();
+    Q_OBJECT
+public:
+    explicit Photo(QObject *parent = 0);
+    Photo(const Photo &);
+    Photo(QJsonObject jobject);
+
+    QString getId();
+    QString getTitle();
+    QString getUrl(QString size);
+
+    void setAlbum(QString album);
+    QString getAlbum();
+signals:
     
-    return a.exec();
-}
+public slots:
+private:
+    QString id;
+    QString url;
+    QString title;
+    QString album;
+};
+
+#endif // PHOTO_H

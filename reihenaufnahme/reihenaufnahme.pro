@@ -14,7 +14,8 @@ SOURCES += main.cpp\
     plugins/pcpluginwidget.cpp \
     image.cpp \
     process.cpp \
-    imgedit.cpp
+    imgedit.cpp \
+    message.cpp
 
 HEADERS  += mainwindow.h \
     tipsdialog.h \
@@ -30,7 +31,8 @@ HEADERS  += mainwindow.h \
     plugins/editplugin.h \
     image.h \
     process.h \
-    imgedit.h
+    imgedit.h \
+    message.h
 
 FORMS    += mainwindow.ui \
     tipsdialog.ui \

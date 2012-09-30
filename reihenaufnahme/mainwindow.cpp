@@ -24,6 +24,7 @@
 #include "aboutdialog.h"
 #include "plugins/pluginsconfigdialog.h"
 #include "plugins/pluginloader.h"
+#include "message.h"
 
 #include <QtWidgets/QSplashScreen>
 #include <QtCore/QTranslator>
@@ -59,6 +60,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(process, SIGNAL(process(int)), ui->progressBar, SLOT(setValue(int)));
     connect(process, SIGNAL(processImage(QImage*)), this, SLOT(updateProcessImage(QImage*)));
     connect(process, SIGNAL(finished()), this, SLOT(on_stopPushButton_clicked()));
+    connect(Message::getSingleton(), SIGNAL(gotMessage(QString)), ui->statusBar, SLOT(showMessage(QString)));
     splash.finish(this);
 }
 
