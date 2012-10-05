@@ -16,6 +16,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/savefile_de.ts \
                 ../../i18n/savefile_en.ts \
+                ../../i18n/savefile_fr.ts \
+                ../../i18n/savefile_ru.ts \
 
 DESTDIR		= ../../plugins
 

@@ -20,6 +20,7 @@
 #include "ui_tipsdialog.h"
 
 #include "reihenaufnahme.h"
+#include "translation.h"
 
 #include <QtCore/QFile>
 #include <QtCore/QTextStream>
@@ -55,7 +56,7 @@ void TipsDialog::loadTip(){
 void TipsDialog::loadTips(){
     /* Loads tips from languages tips file (/tips/tips_*locale*.txt) */
 
-    QString tipsFile(Reihenaufnahme::applicationDirPath() + "/tips/" + "tips_" + "en" + ".txt" );
+    QString tipsFile(Reihenaufnahme::applicationDirPath() + "/tips/" + "tips_" + Translation::locale() + ".txt" );
     /* if tips dont exist in your language use en. */
     if(!QFile().exists(tipsFile)){
         tipsFile = QString(Reihenaufnahme::applicationDirPath() + "/tips/" + "tips_en.txt");

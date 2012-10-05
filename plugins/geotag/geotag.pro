@@ -20,6 +20,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/geotag_de.ts \
                 ../../i18n/geotag_en.ts \
+                ../../i18n/geotag_fr.ts \
+                ../../i18n/geotag_ru.ts \
 
 DESTDIR		= ../../plugins
 

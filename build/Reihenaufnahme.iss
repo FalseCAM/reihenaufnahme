@@ -119,6 +119,8 @@ Source: "..\..\reihenaufnahme-64bit\plugins\savefile5.dll"; DestDir: "{app}\plug
 
 ; Languages
 Source: "..\..\reihenaufnahme-32bit\i18n\*.qm"; DestDir: "{app}\i18n\"; Components: Languages
+; Tips
+Source: "..\tips\*.txt"; DestDir: "{app}\tips\"; Components: Reihenaufnahme
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
@@ -129,6 +131,7 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: 
 Name: "{app}\i18n"; Components: Reihenaufnahme
 Name: "{app}\plugins"; Components: Reihenaufnahme
 Name: "{app}\imageformats"; Components: Reihenaufnahme
+Name: "{app}\tips"; Components: Reihenaufnahme
 
 [Components]
 Name: "Reihenaufnahme"; Description: "Main Program"; ExtraDiskSpaceRequired: 38000000; Types: full custom compact; Flags: fixed

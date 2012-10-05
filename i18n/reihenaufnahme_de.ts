@@ -31,7 +31,7 @@
     <message>
         <location filename="../reihenaufnahme/aboutdialog.ui" line="63"/>
         <source>About</source>
-        <translation>Über</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <location filename="../reihenaufnahme/aboutdialog.ui" line="39"/>
@@ -120,7 +120,7 @@
     <message>
         <location filename="../reihenaufnahme/mainwindow.ui" line="191"/>
         <source>Ctrl+Q</source>
-        <translation>Strg+E</translation>
+        <translation>Ctrl+E</translation>
     </message>
     <message>
         <location filename="../reihenaufnahme/mainwindow.ui" line="199"/>
@@ -142,7 +142,7 @@
         <translation>Sprache</translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.cpp" line="179"/>
+        <location filename="../reihenaufnahme/mainwindow.cpp" line="178"/>
         <source>Finnished in %1 milliseconds.</source>
         <translation>Beendet in %1 Millisekunden.</translation>
     </message>
@@ -242,8 +242,12 @@
     </message>
     <message>
         <location filename="../reihenaufnahme/translation.cpp" line="89"/>
+        <source>english</source>
+        <translation>deutsch</translation>
+    </message>
+    <message>
         <source>English</source>
-        <translation>Deutsch</translation>
+        <translation type="obsolete">deutsch</translation>
     </message>
 </context>
 </TS>

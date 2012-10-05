@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="de_DE">
+<TS version="2.0" language="fr_FR">
 <context>
     <name>SaveFile</name>
     <message>
         <location filename="../plugins/savefile/savefile.cpp" line="24"/>
         <source>Save File</source>
-        <translation>Bild Speichern</translation>
+        <translation>Enregistrer le fichier</translation>
     </message>
     <message>
         <location filename="../plugins/savefile/savefile.cpp" line="36"/>
         <source>Plugin to save images to desktop.</source>
-        <translation>Plugin um Bilder auf den Computer zu Speichern</translation>
+        <translation>Plugin pour afficher les images sur l&apos;ordinateur pour stocker</translation>
     </message>
 </context>
 <context>
@@ -19,36 +19,32 @@
     <message>
         <location filename="../plugins/savefile/widget.ui" line="20"/>
         <source>change quality</source>
-        <translation>ändere Qualität</translation>
+        <translation>modifier la qualité</translation>
     </message>
     <message>
         <location filename="../plugins/savefile/widget.ui" line="40"/>
         <source>select image format</source>
-        <translation>wähle Bildformat</translation>
+        <translation>sélectionner le format d&apos;image</translation>
     </message>
     <message>
         <location filename="../plugins/savefile/widget.ui" line="60"/>
         <source>Exif data are informations like exposure time or camera model.</source>
-        <translation>Exif Daten sind Informationen wie Auslösezeit oder Kameramodell.</translation>
+        <translation>Données Exif sont des informations telles que la durée d&apos;exposition ou de modèle d&apos;appareil photo.</translation>
     </message>
     <message>
         <location filename="../plugins/savefile/widget.ui" line="63"/>
         <source>save exif data</source>
-        <translation>speicher Exif Daten</translation>
-    </message>
-    <message>
-        <source>copy metadata</source>
-        <translation type="obsolete">kopiere Metadaten (Exif)</translation>
+        <translation>économiser de données EXIF</translation>
     </message>
     <message>
         <location filename="../plugins/savefile/widget.ui" line="73"/>
         <source>select folder</source>
-        <translation>wähle Verzeichnis</translation>
+        <translation>sélectionnez le dossier</translation>
     </message>
     <message>
         <location filename="../plugins/savefile/widget.cpp" line="70"/>
         <source>Please select directory where images will saved to.</source>
-        <translation>Bitte wählen Sie ein Verzeichnis in welches die Bilder gespeichert werden sollen.</translation>
+        <translation>S&apos;il vous plaît sélectionner le répertoire où les images seront enregistrées.</translation>
     </message>
 </context>
 </TS>

@@ -21,6 +21,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/blur_de.ts \
                 ../../i18n/blur_en.ts \
+                ../../i18n/blur_fr.ts \
+                ../../i18n/blur_ru.ts \
 
 DESTDIR		= ../../plugins
 

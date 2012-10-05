@@ -42,6 +42,8 @@ FORMS    += mainwindow.ui \
 
 TRANSLATIONS += ../i18n/reihenaufnahme_de.ts \
                 ../i18n/reihenaufnahme_en.ts \
+                ../i18n/reihenaufnahme_fr.ts \
+                ../i18n/reihenaufnahme_ru.ts \
 
 RESOURCES += \
     reihenaufnahme.qrc

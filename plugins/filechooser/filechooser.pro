@@ -17,6 +17,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/filechooser_de.ts \
                 ../../i18n/filechooser_en.ts \
+                ../../i18n/filechooser_fr.ts \
+                ../../i18n/filechooser_ru.ts \
 
 DESTDIR		= ../../plugins
 

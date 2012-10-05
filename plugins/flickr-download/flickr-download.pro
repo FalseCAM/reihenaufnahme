@@ -23,6 +23,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/flickr-download_de.ts \
                 ../../i18n/flickr-download_en.ts \
+                ../../i18n/flickr-download_fr.ts \
+                ../../i18n/flickr-download_ru.ts \
 
 DESTDIR		= ../../plugins
 

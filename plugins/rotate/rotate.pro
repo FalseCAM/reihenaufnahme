@@ -18,6 +18,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/rotate_de.ts \
                 ../../i18n/rotate_en.ts \
+                ../../i18n/rotate_fr.ts \
+                ../../i18n/rotate_ru.ts \
 
 DESTDIR		= ../../plugins
 

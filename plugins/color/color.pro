@@ -19,6 +19,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/color_de.ts \
                 ../../i18n/color_en.ts \
+                ../../i18n/color_fr.ts \
+                ../../i18n/color_ru.ts \
 
 DESTDIR		= ../../plugins
 

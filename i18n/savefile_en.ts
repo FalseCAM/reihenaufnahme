@@ -29,12 +29,12 @@
     <message>
         <location filename="../plugins/savefile/widget.ui" line="60"/>
         <source>Exif data are informations like exposure time or camera model.</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../plugins/savefile/widget.ui" line="63"/>
         <source>save exif data</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../plugins/savefile/widget.ui" line="73"/>

@@ -24,6 +24,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/picasa-upload_de.ts \
                 ../../i18n/picasa-upload_en.ts \
+                ../../i18n/picasa-upload_fr.ts \
+                ../../i18n/picasa-upload_ru.ts \
 
 DESTDIR		= ../../plugins
 

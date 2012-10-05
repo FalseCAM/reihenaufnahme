@@ -18,6 +18,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/previewimage_de.ts \
                 ../../i18n/previewimage_en.ts \
+                ../../i18n/previewimage_fr.ts \
+                ../../i18n/previewimage_ru.ts \
 
 DESTDIR		= ../../plugins
 

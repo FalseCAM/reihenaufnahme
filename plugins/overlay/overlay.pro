@@ -19,6 +19,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/overlay_de.ts \
                 ../../i18n/overlay_en.ts \
+                ../../i18n/overlay_fr.ts \
+                ../../i18n/overlay_ru.ts \
 
 DESTDIR		= ../../plugins
 

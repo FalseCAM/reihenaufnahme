@@ -42,7 +42,7 @@ Translation::~Translation(){
 
 void Translation::loadLanguage(){
     QSettings settings(Reihenaufnahme::organizationName(), Reihenaufnahme::applicationName());
-    this->currentLanguage = settings.value(QString::fromUtf8("language"), "English").toString();
+    this->currentLanguage = settings.value(QString::fromUtf8("language"), "english").toString();
 }
 
 
@@ -86,7 +86,7 @@ QString Translation::languageName(const QString &qmFile)
 {
     QTranslator translator;
     translator.load(qmFile);
-    return translator.translate("Translation", "English");
+    return translator.translate("Translation", "english");
 }
 
 void Translation::installPluginTranslation(QString pluginName){

@@ -18,6 +18,8 @@ OTHER_FILES += \
 
 TRANSLATIONS += ../../i18n/resize_de.ts \
                 ../../i18n/resize_en.ts \
+                ../../i18n/resize_fr.ts \
+                ../../i18n/resize_ru.ts \
 
 DESTDIR		= ../../plugins
 
