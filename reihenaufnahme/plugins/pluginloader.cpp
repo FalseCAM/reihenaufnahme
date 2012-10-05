@@ -56,14 +56,15 @@ void PluginLoader::loadConfig(){
     settings.beginGroup("plugins");
 
     QStringList list;
-    list = settings.value("ActivatedPlugins", QStringList()).toStringList();
+    list << "filechooser" << "resize" << "savefile";
+    list = settings.value("ActivatedPlugins", list).toStringList();
     activatePlugins(list);
 }
 
 void PluginLoader::saveConfig(){
     QSettings settings(Reihenaufnahme::organizationName(), Reihenaufnahme::applicationName());
     settings.beginGroup("plugins");
-    QStringList stringList; //Temp is the QList<int>
+    QStringList stringList;
     // inputplugins
     foreach(InputPlugin *plugin, inputPlugins){
         if(this->isActivatedPlugin(plugin)){

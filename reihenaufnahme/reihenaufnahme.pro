@@ -46,6 +46,10 @@ TRANSLATIONS += ../i18n/reihenaufnahme_de.ts \
 RESOURCES += \
     reihenaufnahme.qrc
 
+win32 {
+    RC_FILE += reihenaufnahme.rc
+}
+
 DESTDIR     = ../
 
 LIBS += -lexiv2

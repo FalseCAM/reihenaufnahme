@@ -161,7 +161,6 @@ void MainWindow::on_startPushButton_clicked()
     ui->outputGroupBox->setEnabled(false);
 
     ui->actionPlugins->setEnabled(false);
-
     timer->start();
     process->start();
 }
@@ -176,7 +175,7 @@ void MainWindow::on_stopPushButton_clicked()
     ui->outputGroupBox->setEnabled(true);
 
     ui->actionPlugins->setEnabled(true);
-    ui->statusBar->showMessage(tr("Finnished in %1 milliseconds.").arg(timer->elapsed()));
+    Message::message(tr("Finnished in %1 milliseconds.").arg(timer->elapsed()));
     process->stop();
 }
 

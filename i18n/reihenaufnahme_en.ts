@@ -138,7 +138,7 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../reihenaufnahme/mainwindow.cpp" line="177"/>
+        <location filename="../reihenaufnahme/mainwindow.cpp" line="179"/>
         <source>Finnished in %1 milliseconds.</source>
         <translation></translation>
     </message>
