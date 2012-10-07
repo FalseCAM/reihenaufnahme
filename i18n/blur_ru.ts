@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/blur/blur.cpp" line="39"/>
         <source>Blur</source>
-        <translation type="unfinished"></translation>
+        <translation>пятно</translation>
     </message>
     <message>
         <location filename="../plugins/blur/blur.cpp" line="51"/>
         <source>Plugin to blur images</source>
-        <translation type="unfinished"></translation>
+        <translation>Плагин к смазыванию изображений</translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../plugins/blur/widget.ui" line="23"/>
         <source>invert</source>
-        <translation type="unfinished"></translation>
+        <translation>инвертировать</translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="33"/>
         <source>reset previewimage</source>
-        <translation type="unfinished"></translation>
+        <translation>Сброс просмотра изображений</translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="56"/>
         <source>radius </source>
-        <translation type="unfinished"></translation>
+        <translation>радиус </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="63"/>
         <source>blur</source>
-        <translation type="unfinished"></translation>
+        <translation>пятно</translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="73"/>
@@ -42,32 +42,32 @@
         <location filename="../plugins/blur/widget.ui" line="99"/>
         <location filename="../plugins/blur/widget.ui" line="112"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="76"/>
         <source>height </source>
-        <translation type="unfinished"></translation>
+        <translation>высота </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="89"/>
         <source>posX </source>
-        <translation type="unfinished"></translation>
+        <translation>положение X </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="102"/>
         <source>posY </source>
-        <translation type="unfinished"></translation>
+        <translation>положение Y </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="115"/>
         <source>width </source>
-        <translation type="unfinished"></translation>
+        <translation>ширина </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="122"/>
         <source>You can drop custom image here:</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы можете оставить собственное изображение здесь:</translation>
     </message>
 </context>
 </TS>

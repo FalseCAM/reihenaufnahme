@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/rename/rename.cpp" line="38"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>переименовать</translation>
     </message>
     <message>
         <location filename="../plugins/rename/rename.cpp" line="50"/>
         <source>Plugin to rename images</source>
-        <translation type="unfinished"></translation>
+        <translation>Плагин для переименования изображений</translation>
     </message>
 </context>
 <context>
@@ -19,63 +19,63 @@
     <message>
         <location filename="../plugins/rename/widget.ui" line="23"/>
         <source>counter</source>
-        <translation type="unfinished"></translation>
+        <translation>противодействие</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="29"/>
         <source>counter start:</source>
-        <translation type="unfinished"></translation>
+        <translation>Счетчик начать:</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="36"/>
         <source>use counter</source>
-        <translation type="unfinished"></translation>
+        <translation>использовать счетчик</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="43"/>
         <source>counter decimals:</source>
-        <translation type="unfinished"></translation>
+        <translation>Счетчик знаков после запятой:</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="83"/>
         <source>new name</source>
-        <translation type="unfinished"></translation>
+        <translation>новое наименование</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="90"/>
         <source>suffix:</source>
-        <translation type="unfinished"></translation>
+        <translation>суффикс:</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="97"/>
         <source>prefix:</source>
-        <translation type="unfinished"></translation>
+        <translation>префикс:</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="104"/>
         <source>rename</source>
-        <translation type="unfinished"></translation>
+        <translation>переименовать</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="148"/>
         <location filename="../plugins/rename/widget.cpp" line="133"/>
         <source>example</source>
-        <translation type="unfinished"></translation>
+        <translation>пример</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="158"/>
         <source>Exif - Date</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="164"/>
         <source>prepend</source>
-        <translation type="unfinished"></translation>
+        <translation>предварять</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="171"/>
         <source>append</source>
-        <translation type="unfinished"></translation>
+        <translation>добавлять</translation>
     </message>
 </context>
 </TS>

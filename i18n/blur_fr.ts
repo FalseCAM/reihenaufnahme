@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/blur/blur.cpp" line="39"/>
         <source>Blur</source>
-        <translation type="unfinished"></translation>
+        <translation>brouiller</translation>
     </message>
     <message>
         <location filename="../plugins/blur/blur.cpp" line="51"/>
         <source>Plugin to blur images</source>
-        <translation type="unfinished"></translation>
+        <translation>Plugin pour brouiller les images</translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../plugins/blur/widget.ui" line="23"/>
         <source>invert</source>
-        <translation type="unfinished"></translation>
+        <translation>inverser</translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="33"/>
         <source>reset previewimage</source>
-        <translation type="unfinished"></translation>
+        <translation>réinitialiser image d&apos;aperçu</translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="56"/>
         <source>radius </source>
-        <translation type="unfinished"></translation>
+        <translation>rayon </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="63"/>
         <source>blur</source>
-        <translation type="unfinished"></translation>
+        <translation>brouiller</translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="73"/>
@@ -42,32 +42,32 @@
         <location filename="../plugins/blur/widget.ui" line="99"/>
         <location filename="../plugins/blur/widget.ui" line="112"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="76"/>
         <source>height </source>
-        <translation type="unfinished"></translation>
+        <translation>hauteur </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="89"/>
         <source>posX </source>
-        <translation type="unfinished"></translation>
+        <translation>position X </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="102"/>
         <source>posY </source>
-        <translation type="unfinished"></translation>
+        <translation>position X </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="115"/>
         <source>width </source>
-        <translation type="unfinished"></translation>
+        <translation>largeur </translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="122"/>
         <source>You can drop custom image here:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vous pouvez déposer image personnalisée ici:</translation>
     </message>
 </context>
 </TS>

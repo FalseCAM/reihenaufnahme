@@ -39,17 +39,17 @@
     <message>
         <location filename="../plugins/rename/widget.ui" line="158"/>
         <source>Exif - Date</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="164"/>
         <source>prepend</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="171"/>
         <source>append</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="23"/>

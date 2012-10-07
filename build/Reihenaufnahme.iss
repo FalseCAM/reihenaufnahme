@@ -27,7 +27,7 @@ SetupIconFile=..\reihenaufnahme\resources\icon.ico
 Compression=lzma
 SolidCompression=yes
 ; Architecture
-ArchitecturesInstallIn64BitMode=
+ArchitecturesInstallIn64BitMode=x64
 
 WizardImageFile=Wiz.bmp
 WizardSmallImageFile=WizSmall.bmp

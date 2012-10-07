@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/color/color.cpp" line="39"/>
         <source>Color</source>
-        <translation type="unfinished"></translation>
+        <translation>Цвет</translation>
     </message>
     <message>
         <location filename="../plugins/color/color.cpp" line="51"/>
         <source>Plugin to invert color or grayscale image</source>
-        <translation type="unfinished"></translation>
+        <translation>Плагин, чтобы инвертировать цвета или оттенков серого картина</translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../plugins/color/widget.ui" line="20"/>
         <source>grayscale</source>
-        <translation type="unfinished"></translation>
+        <translation>оттенках серого</translation>
     </message>
     <message>
         <location filename="../plugins/color/widget.ui" line="49"/>
         <source>sepia</source>
-        <translation type="unfinished"></translation>
+        <translation>сепия</translation>
     </message>
     <message>
         <location filename="../plugins/color/widget.ui" line="56"/>
         <source>invert</source>
-        <translation type="unfinished"></translation>
+        <translation>инвертировать</translation>
     </message>
     <message>
         <location filename="../plugins/color/widget.ui" line="76"/>
         <source>swap RGB</source>
-        <translation type="unfinished"></translation>
+        <translation>поменять RGB</translation>
     </message>
 </context>
 </TS>

@@ -24,12 +24,12 @@
     <message>
         <location filename="../plugins/rename/widget.ui" line="90"/>
         <source>suffix:</source>
-        <translation></translation>
+        <translation>Suffix:</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="97"/>
         <source>prefix:</source>
-        <translation></translation>
+        <translation>Präfix:</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="104"/>
@@ -39,17 +39,17 @@
     <message>
         <location filename="../plugins/rename/widget.ui" line="158"/>
         <source>Exif - Date</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="164"/>
         <source>prepend</source>
-        <translation type="unfinished"></translation>
+        <translation>voranstellen</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="171"/>
         <source>append</source>
-        <translation type="unfinished"></translation>
+        <translation>anfügen</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="23"/>

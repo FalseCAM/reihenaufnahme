@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/rotate/rotate.cpp" line="26"/>
         <source>Rotate</source>
-        <translation type="unfinished"></translation>
+        <translation>вращать</translation>
     </message>
     <message>
         <location filename="../plugins/rotate/rotate.cpp" line="38"/>
         <source>Plugin to rotate images</source>
-        <translation type="unfinished"></translation>
+        <translation>Плагин для поворота изображения</translation>
     </message>
 </context>
 <context>
@@ -19,32 +19,32 @@
     <message utf8="true">
         <location filename="../plugins/rotate/widget.ui" line="20"/>
         <source>rotate 180° clockwise</source>
-        <translation type="unfinished"></translation>
+        <translation>поворачиваться на 180 ° по часовой стрелке</translation>
     </message>
     <message>
         <location filename="../plugins/rotate/widget.ui" line="27"/>
         <source>rotate clockwise by angle</source>
-        <translation type="unfinished"></translation>
+        <translation>вращаться по часовой стрелке на угол</translation>
     </message>
     <message>
         <location filename="../plugins/rotate/widget.ui" line="34"/>
         <source>no rotation</source>
-        <translation type="unfinished"></translation>
+        <translation>без вращения</translation>
     </message>
     <message>
         <location filename="../plugins/rotate/widget.ui" line="44"/>
         <source>rotate counterclockwise</source>
-        <translation type="unfinished"></translation>
+        <translation>вращаться против часовой стрелки</translation>
     </message>
     <message>
         <location filename="../plugins/rotate/widget.ui" line="51"/>
         <source>rotate clockwise</source>
-        <translation type="unfinished"></translation>
+        <translation>вращаться по часовой стрелке</translation>
     </message>
     <message utf8="true">
         <location filename="../plugins/rotate/widget.ui" line="61"/>
         <source>°</source>
-        <translation type="unfinished"></translation>
+        <translation>°</translation>
     </message>
 </context>
 </TS>

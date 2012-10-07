@@ -44,7 +44,7 @@
     <message utf8="true">
         <location filename="../plugins/rotate/widget.ui" line="61"/>
         <source>°</source>
-        <translation></translation>
+        <translation>°</translation>
     </message>
 </context>
 </TS>

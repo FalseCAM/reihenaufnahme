@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/previewimage/previewimage.cpp" line="39"/>
         <source>Previewimage</source>
-        <translation type="unfinished"></translation>
+        <translation>Предварительный просмотр</translation>
     </message>
     <message>
         <location filename="../plugins/previewimage/previewimage.cpp" line="51"/>
         <source>Plugin to update previewimage in exif data.</source>
-        <translation type="unfinished"></translation>
+        <translation>Плагин для обновления previewimage в данных EXIF.</translation>
     </message>
 </context>
 <context>
@@ -19,17 +19,17 @@
     <message>
         <location filename="../plugins/previewimage/widget.ui" line="33"/>
         <source>change nothing</source>
-        <translation type="unfinished"></translation>
+        <translation>ничего не изменится</translation>
     </message>
     <message>
         <location filename="../plugins/previewimage/widget.ui" line="43"/>
         <source>remove previewimage</source>
-        <translation type="unfinished"></translation>
+        <translation>удалить изображения предварительного просмотра</translation>
     </message>
     <message>
         <location filename="../plugins/previewimage/widget.ui" line="50"/>
         <source>update exifdatas previewimage</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновление EXIF данные изображения предварительного просмотра</translation>
     </message>
 </context>
 </TS>

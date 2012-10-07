@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/color/color.cpp" line="39"/>
         <source>Color</source>
-        <translation type="unfinished">Farbe</translation>
+        <translation>Farbe</translation>
     </message>
     <message>
         <location filename="../plugins/color/color.cpp" line="51"/>
         <source>Plugin to invert color or grayscale image</source>
-        <translation type="unfinished">Plugin um Farben zu invertieren oder Farben in Graustufen umzuwandeln</translation>
+        <translation>Plugin um Farben zu invertieren oder Farben in Graustufen umzuwandeln</translation>
     </message>
 </context>
 <context>

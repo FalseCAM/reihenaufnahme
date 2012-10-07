@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/overlay/overlay.cpp" line="25"/>
         <source>Overlay</source>
-        <translation type="unfinished"></translation>
+        <translation>наложение</translation>
     </message>
     <message>
         <location filename="../plugins/overlay/overlay.cpp" line="37"/>
         <source>Plugin to overlay images</source>
-        <translation type="unfinished"></translation>
+        <translation>Плагин для наложения фотографий</translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../plugins/overlay/widget.ui" line="33"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../plugins/overlay/widget.ui" line="65"/>
         <source>Add Overlay Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить наложения изображений</translation>
     </message>
     <message>
         <location filename="../plugins/overlay/widget.ui" line="72"/>
         <source>example</source>
-        <translation type="unfinished"></translation>
+        <translation>пример</translation>
     </message>
     <message>
         <location filename="../plugins/overlay/widget.cpp" line="52"/>
         <source>Please select a file</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, выберите файл</translation>
     </message>
 </context>
 </TS>
