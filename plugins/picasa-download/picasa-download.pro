@@ -6,7 +6,6 @@ INCLUDEPATH	+= ../../reihenaufnahme
 HEADERS         = picasa-download.h \
     widget.h \
     ../../reihenaufnahme/image.h \
-    ../../reihenaufnahme/message.h \
     photo.h \
     picasa.h \
     album.h \
@@ -14,7 +13,6 @@ HEADERS         = picasa-download.h \
 SOURCES         = picasa-download.cpp \
     widget.cpp \
     ../../reihenaufnahme/image.cpp \
-    ../../reihenaufnahme/message.cpp \
     photo.cpp \
     picasa.cpp \
     album.cpp \

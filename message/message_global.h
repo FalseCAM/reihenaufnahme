@@ -15,19 +15,15 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+#ifndef MESSAGE_GLOBAL_H
+#define MESSAGE_GLOBAL_H
 
-#include <QtWidgets/QApplication>
-#include "mainwindow.h"
-#include "reihenaufnahme.h"
-#include "translation.h"
+#include <QtCore/qglobal.h>
 
-int main(int argc, char *argv[]) {
-    QApplication a(argc, argv);
-    Reihenaufnahme::setApplicationName("Reihenaufnahme");
-    Reihenaufnahme::setApplicationVersion("1.0.6");
-    Reihenaufnahme::setOrganizationName("FalseCAM");
-    a.setWindowIcon(Reihenaufnahme::applicationIcon());
-    MainWindow w;
-    w.show();
-    return a.exec();
-}
+#if defined(MESSAGE_LIBRARY)
+#  define MESSAGESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define MESSAGESHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MESSAGE_GLOBAL_H

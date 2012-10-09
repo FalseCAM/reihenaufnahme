@@ -18,7 +18,7 @@
 
 #include "image.h"
 
-Image::Image(QImage *image, QString album, QString name, int index){
+Image::Image(QImage *image, QString album, QString name, int index) {
     this->img = 0;
     this->exifData = 0;
     setImage(image);
@@ -27,50 +27,50 @@ Image::Image(QImage *image, QString album, QString name, int index){
     setIndex(index);
 }
 
-QImage *Image::getImage(){
+QImage *Image::getImage() {
     return this->img;
 }
 
-QString Image::getAlbum(){
+QString Image::getAlbum() {
     return this->album;
 }
 
-QString Image::getName(){
+QString Image::getName() {
     return this->name;
 }
 
-int Image::getIndex(){
+int Image::getIndex() {
     return this->index;
 }
 
-Exiv2::ExifData* Image::getExifData(){
+Exiv2::ExifData* Image::getExifData() {
     return this->exifData;
 }
 
-void Image::setImage(QImage *image){
-    if (this->img != image){
+void Image::setImage(QImage *image) {
+    if (this->img != image) {
         if (this->img != 0)
             delete this->img;
         this->img = image;
     }
 }
 
-void Image::setAlbum(QString album){
+void Image::setAlbum(QString album) {
     this->album = album;
 }
 
-void Image::setName(QString name){
+void Image::setName(QString name) {
     this->name = name;
 }
 
-void Image::setIndex(int index){
+void Image::setIndex(int index) {
     this->index = index;
-    if(this->index < 0)
+    if (this->index < 0)
         this->index = 0;
 }
 
-void Image::setExifData(Exiv2::ExifData *data){
-    if(this->exifData != data){
+void Image::setExifData(Exiv2::ExifData *data) {
+    if (this->exifData != data) {
         if (this->exifData != 0)
             delete this->exifData;
         this->exifData = data;

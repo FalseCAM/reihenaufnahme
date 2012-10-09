@@ -56,6 +56,7 @@ Source: "..\..\reihenaufnahme-32bit\QtGui5.dll"; DestDir: "{app}"; Flags: 32bit;
 Source: "..\..\reihenaufnahme-32bit\QtNetwork5.dll"; DestDir: "{app}"; Flags: 32bit; Components: Reihenaufnahme; Check: not Is64BitInstallMode
 Source: "..\..\reihenaufnahme-32bit\QtWidgets5.dll"; DestDir: "{app}"; Flags: 32bit; Components: Reihenaufnahme; Check: not Is64BitInstallMode
 Source: "..\..\reihenaufnahme-32bit\zlib1.dll"; DestDir: "{app}"; Flags: 32bit; Components: Reihenaufnahme; Check: not Is64BitInstallMode
+Source: "..\..\reihenaufnahme-32bit\message.dll"; DestDir: "{app}"; Flags: 32bit; Components: Reihenaufnahme; Check: not Is64BitInstallMode
 ; Imageformats
 Source: "..\..\reihenaufnahme-32bit\imageformats\*"; DestDir: "{app}\imageformats\"; Flags: 32bit; Components: Reihenaufnahme; Check: not Is64BitInstallMode
 
@@ -98,6 +99,7 @@ Source: "..\..\reihenaufnahme-64bit\QtGui5.dll"; DestDir: "{app}"; Flags: 64bit;
 Source: "..\..\reihenaufnahme-64bit\QtNetwork5.dll"; DestDir: "{app}"; Flags: 64bit; Components: Reihenaufnahme; Check: Is64BitInstallMode
 Source: "..\..\reihenaufnahme-64bit\QtWidgets5.dll"; DestDir: "{app}"; Flags: 64bit; Components: Reihenaufnahme; Check: Is64BitInstallMode
 Source: "..\..\reihenaufnahme-64bit\zlib1.dll"; DestDir: "{app}"; Flags: 64bit; Components: Reihenaufnahme; Check: Is64BitInstallMode
+Source: "..\..\reihenaufnahme-32bit\message.dll"; DestDir: "{app}"; Flags: 64bit; Components: Reihenaufnahme; Check: Is64BitInstallMode
 ; Imageformats
 Source: "..\..\reihenaufnahme-64bit\imageformats\*"; DestDir: "{app}\imageformats\"; Flags: 64bit; Components: Reihenaufnahme; Check: Is64BitInstallMode
 

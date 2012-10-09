@@ -19,6 +19,7 @@
 #include "pluginloader.h"
 #include "../reihenaufnahme.h"
 #include "../translation.h"
+#include "../message/message.h"
 
 #include <QtCore/QPluginLoader>
 #include <QtCore/QDir>
@@ -246,6 +247,7 @@ void PluginLoader::loadInputPlugins(QString dir) {
             InputPlugin *plugin_ = qobject_cast<
                     InputPlugin *> (plugin);
             if (plugin_) {
+                Message::debug("[Pluginloader] loaded input plugin: " + fileName);
                 addInputPlugin(plugin_);
             } else {
                 delete plugin_;
@@ -293,10 +295,12 @@ void PluginLoader::loadEditPlugins(QString dir) {
         QPluginLoader pluginLoader(pluginsDir.absoluteFilePath(fileName));
         QObject *plugin = pluginLoader.instance();
         if (plugin) {
+
             // loads Plugins
             EditPlugin *plugin_ = qobject_cast<
                     EditPlugin *> (plugin);
             if (plugin_) {
+                Message::debug("[Pluginloader] loaded edit plugin: " + fileName);
                 addEditPlugin(plugin_);
             } else {
                 delete plugin_;
@@ -348,6 +352,7 @@ void PluginLoader::loadOutputPlugins(QString dir) {
             OutputPlugin *plugin_ = qobject_cast<
                     OutputPlugin *> (plugin);
             if (plugin_) {
+                Message::debug("[Pluginloader] loaded output plugin: " + fileName);
                 addOutputPlugin(plugin_);
             } else {
                 delete plugin_;

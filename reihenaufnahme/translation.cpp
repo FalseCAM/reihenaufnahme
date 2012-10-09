@@ -18,11 +18,11 @@
 
 #include "translation.h"
 #include "reihenaufnahme.h"
+#include "../message/message.h"
 
 #include <QtCore/QDir>
 #include <QtCore/QTranslator>
 #include <QtCore/QCoreApplication>
-#include <QtCore/QDebug>
 
 Translation::Translation(QObject *parent) :
     QObject(parent)
@@ -92,7 +92,7 @@ QString Translation::languageName(const QString &qmFile)
 void Translation::installPluginTranslation(QString pluginName){
     QTranslator *translator = new QTranslator;
     QString file(Reihenaufnahme::applicationDirPath()+"/i18n/"+ pluginName + "_" + locale()+ ".qm" );
-    qDebug("%s",qPrintable(file));
+    Message::debug("[Translation] loaded file: " + file);
     translator->load(file);
     Reihenaufnahme::installTranslator(translator);
 }

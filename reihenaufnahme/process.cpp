@@ -26,6 +26,7 @@
 Process::Process(QObject *parent) :
     QThread(parent)
 {
+	stopped = true;
 }
 
 void Process::run(){

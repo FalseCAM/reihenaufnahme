@@ -26,6 +26,7 @@ FileChooser::FileChooser()
 {
     this->widget = 0;
     has_next = false;
+	this->position = 0;
 }
 
 FileChooser::~FileChooser()

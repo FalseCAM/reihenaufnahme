@@ -15,19 +15,32 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+#ifndef MESSAGE_H
+#define MESSAGE_H
 
-#include <QtWidgets/QApplication>
-#include "mainwindow.h"
-#include "reihenaufnahme.h"
-#include "translation.h"
+#include "message_global.h"
+#include <QtCore/QObject>
 
-int main(int argc, char *argv[]) {
-    QApplication a(argc, argv);
-    Reihenaufnahme::setApplicationName("Reihenaufnahme");
-    Reihenaufnahme::setApplicationVersion("1.0.6");
-    Reihenaufnahme::setOrganizationName("FalseCAM");
-    a.setWindowIcon(Reihenaufnahme::applicationIcon());
-    MainWindow w;
-    w.show();
-    return a.exec();
-}
+class MESSAGESHARED_EXPORT Message : public QObject
+{
+    Q_OBJECT
+public:
+    static Message *getSingleton();
+    static void message(QString message);
+    static void debug(QString debug_message);
+
+signals:
+    void gotMessage(QString);
+    void gotDebug(QString);
+
+public slots:
+
+private:
+    explicit Message(QObject *parent = 0);
+    static Message *singleton;
+
+    void pmessage(QString message);
+    void pdebug(QString debug_message);
+};
+
+#endif // MESSAGE_H

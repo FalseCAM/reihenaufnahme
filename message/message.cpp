@@ -15,19 +15,37 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+#include "message.h"
+#include <QtCore/QDebug>
 
-#include <QtWidgets/QApplication>
-#include "mainwindow.h"
-#include "reihenaufnahme.h"
-#include "translation.h"
+Message *Message::singleton = 0;
 
-int main(int argc, char *argv[]) {
-    QApplication a(argc, argv);
-    Reihenaufnahme::setApplicationName("Reihenaufnahme");
-    Reihenaufnahme::setApplicationVersion("1.0.6");
-    Reihenaufnahme::setOrganizationName("FalseCAM");
-    a.setWindowIcon(Reihenaufnahme::applicationIcon());
-    MainWindow w;
-    w.show();
-    return a.exec();
+Message::Message(QObject *parent) :
+    QObject(parent)
+{
+}
+
+Message *Message::getSingleton() {
+    if(singleton == 0)
+        singleton = new Message();
+    return singleton;
+}
+
+// Message
+void Message::message(QString message) {
+    getSingleton()->pmessage(message);
+}
+
+void Message::pmessage(QString message) {
+    emit gotMessage(message);
+}
+
+// Debug
+void Message::debug(QString debug_message) {
+    getSingleton()->pdebug(debug_message);
+}
+
+void Message::pdebug(QString debug_message) {
+    emit gotDebug(debug_message);
+    qDebug("%s", qPrintable(debug_message));
 }

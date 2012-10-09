@@ -24,7 +24,7 @@
 #include "aboutdialog.h"
 #include "plugins/pluginsconfigdialog.h"
 #include "plugins/pluginloader.h"
-#include "message.h"
+#include "../message/message.h"
 
 #include <QtWidgets/QSplashScreen>
 #include <QtCore/QTranslator>

@@ -17,7 +17,6 @@
  */
 
 #include "picasa.h"
-#include "message.h"
 #include <QtCore/QBuffer>
 #include <QtCore/QEventLoop>
 #include <QtNetwork/QNetworkReply>

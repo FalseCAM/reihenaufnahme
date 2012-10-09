@@ -14,8 +14,7 @@ SOURCES += main.cpp\
     plugins/pcpluginwidget.cpp \
     image.cpp \
     process.cpp \
-    imgedit.cpp \
-    message.cpp
+    imgedit.cpp
 
 HEADERS  += mainwindow.h \
     tipsdialog.h \
@@ -31,8 +30,7 @@ HEADERS  += mainwindow.h \
     plugins/editplugin.h \
     image.h \
     process.h \
-    imgedit.h \
-    message.h
+    imgedit.h
 
 FORMS    += mainwindow.ui \
     tipsdialog.ui \
@@ -55,3 +53,10 @@ win32 {
 DESTDIR     = ../
 
 LIBS += -lexiv2
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../message/release/ -lmessage
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../message/debug/ -lmessage
+else:unix: LIBS += -L$$OUT_PWD/../message/ -lmessage
+
+INCLUDEPATH += $$PWD/../message
+DEPENDPATH += $$PWD/../message
