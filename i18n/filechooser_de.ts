@@ -11,7 +11,7 @@
     <message>
         <location filename="../plugins/filechooser/filechooser.cpp" line="52"/>
         <source>Plugin to load images from desktop.</source>
-        <translation>Plugin um Bilder vom Desktop zu laden</translation>
+        <translation>Plugin um Bilder vom Desktop zu laden.</translation>
     </message>
 </context>
 <context>

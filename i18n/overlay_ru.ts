@@ -24,7 +24,7 @@
     <message>
         <location filename="../plugins/overlay/widget.ui" line="65"/>
         <source>Add Overlay Image</source>
-        <translation>Добавить наложения изображений</translation>
+        <translation>Добавить наложение изображения</translation>
     </message>
     <message>
         <location filename="../plugins/overlay/widget.ui" line="72"/>

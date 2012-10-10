@@ -11,7 +11,7 @@
     <message>
         <location filename="../plugins/color/color.cpp" line="51"/>
         <source>Plugin to invert color or grayscale image</source>
-        <translation>Плагин, чтобы инвертировать цвета или оттенков серого картина</translation>
+        <translation>Плагин, чтобы изменять цвета или оттенки серого цвета</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../plugins/color/widget.ui" line="20"/>
         <source>grayscale</source>
-        <translation>оттенках серого</translation>
+        <translation>оттенки серого</translation>
     </message>
     <message>
         <location filename="../plugins/color/widget.ui" line="49"/>

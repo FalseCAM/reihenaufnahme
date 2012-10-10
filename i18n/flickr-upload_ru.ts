@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/flickr-upload/flickr-upload.cpp" line="38"/>
         <source>Flickr Upload</source>
-        <translation type="unfinished"></translation>
+        <translation>Flickr Загрузить</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-upload/flickr-upload.cpp" line="50"/>
         <source>Plugin to upload images to flickr.</source>
-        <translation type="unfinished"></translation>
+        <translation>Плагин для загрузки изображений в Flickr.</translation>
     </message>
 </context>
 <context>
@@ -19,12 +19,12 @@
     <message>
         <location filename="../plugins/flickr-download/logindialog.ui" line="14"/>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Войти</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/logindialog.ui" line="21"/>
         <source>about:blank</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -32,27 +32,27 @@
     <message>
         <location filename="../plugins/flickr-upload/widget.ui" line="27"/>
         <source>not logged in!</source>
-        <translation type="unfinished"></translation>
+        <translation>не авторизованы!</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-upload/widget.ui" line="34"/>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Войти</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-upload/widget.ui" line="41"/>
         <source>description:</source>
-        <translation type="unfinished"></translation>
+        <translation>описание:</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-upload/widget.ui" line="64"/>
         <source>visible for Friends</source>
-        <translation type="unfinished"></translation>
+        <translation>видимыми для друзей</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-upload/widget.ui" line="71"/>
         <source>save exif data</source>
-        <translation type="unfinished"></translation>
+        <translation>сохранить EXIF-данных</translation>
     </message>
 </context>
 </TS>

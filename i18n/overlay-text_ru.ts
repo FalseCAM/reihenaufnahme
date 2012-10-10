@@ -29,7 +29,7 @@
     <message>
         <location filename="../plugins/overlay-text/widget.ui" line="44"/>
         <source>Select font</source>
-        <translation>Выберите сделать</translation>
+        <translation>Выберите шрифт</translation>
     </message>
     <message>
         <location filename="../plugins/overlay-text/widget.ui" line="51"/>
@@ -49,7 +49,7 @@
     <message>
         <location filename="../plugins/overlay-text/widget.ui" line="99"/>
         <source>Add Exif Date</source>
-        <translation>Добавить Exif дате</translation>
+        <translation>Добавить Exif дату</translation>
     </message>
 </context>
 </TS>

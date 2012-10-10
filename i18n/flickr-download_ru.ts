@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/flickr-download/flickr-download.cpp" line="43"/>
         <source>Flickr Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Скачать Flickr</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/flickr-download.cpp" line="55"/>
         <source>Plugin to load images from flickr.</source>
-        <translation type="unfinished"></translation>
+        <translation>Плагин для загрузки изображений из Flickr.</translation>
     </message>
 </context>
 <context>
@@ -19,12 +19,12 @@
     <message>
         <location filename="../plugins/flickr-download/logindialog.ui" line="14"/>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Войти</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/logindialog.ui" line="21"/>
         <source>about:blank</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -32,52 +32,52 @@
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="23"/>
         <source>size</source>
-        <translation type="unfinished"></translation>
+        <translation>размер</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="29"/>
         <source>thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>миниатюрами</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="36"/>
         <source>mid</source>
-        <translation type="unfinished"></translation>
+        <translation>в середине</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="46"/>
         <source>big</source>
-        <translation type="unfinished"></translation>
+        <translation>большой</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="56"/>
         <source>Username:</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя пользователя:</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="63"/>
         <source>name</source>
-        <translation type="unfinished"></translation>
+        <translation>прозвище</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="69"/>
         <source>id</source>
-        <translation type="unfinished"></translation>
+        <translation>ID</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="79"/>
         <source>title</source>
-        <translation type="unfinished"></translation>
+        <translation>название</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="86"/>
         <source>id_title</source>
-        <translation type="unfinished"></translation>
+        <translation>ID_название</translation>
     </message>
     <message>
         <location filename="../plugins/flickr-download/widget.ui" line="102"/>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Войти</translation>
     </message>
 </context>
 </TS>

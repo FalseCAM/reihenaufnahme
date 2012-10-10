@@ -19,7 +19,7 @@
     <message>
         <location filename="../plugins/resize/widget.ui" line="88"/>
         <source>change nothing</source>
-        <translation>ничего не изменится</translation>
+        <translation>ничего не изменять</translation>
     </message>
     <message>
         <location filename="../plugins/resize/widget.ui" line="98"/>

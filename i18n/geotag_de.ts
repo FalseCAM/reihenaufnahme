@@ -25,7 +25,7 @@
         <location filename="../plugins/geotag/widget.ui" line="27"/>
         <location filename="../plugins/geotag/widget.ui" line="40"/>
         <source>00.000000; </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../plugins/geotag/widget.ui" line="53"/>

@@ -29,7 +29,7 @@
     <message>
         <location filename="../plugins/previewimage/widget.ui" line="50"/>
         <source>update exifdatas previewimage</source>
-        <translation>update Vorschaubild</translation>
+        <translation>Vorschaubild aktuallisieren</translation>
     </message>
 </context>
 </TS>

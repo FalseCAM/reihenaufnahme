@@ -39,7 +39,7 @@
     <message>
         <location filename="../plugins/filechooser/widget.ui" line="47"/>
         <source>add image(s)</source>
-        <translation>добавить изображение (ы)</translation>
+        <translation>добавить изображение (я)</translation>
     </message>
     <message>
         <location filename="../plugins/filechooser/widget.cpp" line="119"/>

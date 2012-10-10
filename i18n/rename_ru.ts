@@ -6,7 +6,7 @@
     <message>
         <location filename="../plugins/rename/rename.cpp" line="38"/>
         <source>Rename</source>
-        <translation>переименовать</translation>
+        <translation>переименовать изображение</translation>
     </message>
     <message>
         <location filename="../plugins/rename/rename.cpp" line="50"/>
@@ -19,12 +19,12 @@
     <message>
         <location filename="../plugins/rename/widget.ui" line="23"/>
         <source>counter</source>
-        <translation>противодействие</translation>
+        <translation>Счетчик</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="29"/>
         <source>counter start:</source>
-        <translation>Счетчик начать:</translation>
+        <translation> включить счетчик:</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="36"/>
@@ -34,7 +34,7 @@
     <message>
         <location filename="../plugins/rename/widget.ui" line="43"/>
         <source>counter decimals:</source>
-        <translation>Счетчик знаков после запятой:</translation>
+        <translation>Счетчик нулей:</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="83"/>
@@ -65,17 +65,17 @@
     <message>
         <location filename="../plugins/rename/widget.ui" line="158"/>
         <source>Exif - Date</source>
-        <translation></translation>
+        <translation>Exif дата</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="164"/>
         <source>prepend</source>
-        <translation>предварять</translation>
+        <translation>вставить вперед</translation>
     </message>
     <message>
         <location filename="../plugins/rename/widget.ui" line="171"/>
         <source>append</source>
-        <translation>добавлять</translation>
+        <translation>вставить в конец</translation>
     </message>
 </context>
 </TS>

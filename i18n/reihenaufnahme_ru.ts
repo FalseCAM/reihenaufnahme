@@ -11,7 +11,7 @@
     <message>
         <location filename="../reihenaufnahme/aboutdialog.ui" line="39"/>
         <source>OK</source>
-        <translation>Закрыть</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <location filename="../reihenaufnahme/aboutdialog.ui" line="46"/>
@@ -51,7 +51,7 @@
     <message>
         <location filename="../reihenaufnahme/aboutdialog.ui" line="193"/>
         <source>&lt;a href=&quot;http://reihenaufnahme.falsecam.net/downloads&quot;&gt;Download site&lt;/a&gt;</source>
-        <translation>&lt;a href=&quot;http://reihenaufnahme.falsecam.net/downloads&quot;&gt;Скачать сайту&lt;/a&gt;</translation>
+        <translation>&lt;a href=&quot;http://reihenaufnahme.falsecam.net/downloads&quot;&gt;Скачать сайт&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../reihenaufnahme/aboutdialog.ui" line="207"/>
@@ -75,7 +75,7 @@
     <message>
         <location filename="../reihenaufnahme/mainwindow.ui" line="21"/>
         <source>Output</source>
-        <translation>выходной</translation>
+        <translation>выход данных</translation>
     </message>
     <message>
         <location filename="../reihenaufnahme/mainwindow.ui" line="40"/>
@@ -110,7 +110,7 @@
     <message>
         <location filename="../reihenaufnahme/mainwindow.ui" line="178"/>
         <source>Tips</source>
-        <translation>чаевые</translation>
+        <translation>Советы</translation>
     </message>
     <message>
         <location filename="../reihenaufnahme/mainwindow.ui" line="183"/>
@@ -130,7 +130,7 @@
     <message>
         <location filename="../reihenaufnahme/mainwindow.ui" line="199"/>
         <source>Changes take effekt after restart.</source>
-        <translation>Изменения вступают Эффект после перезагрузки.</translation>
+        <translation>Изменения применяться после перезагрузки.</translation>
     </message>
     <message>
         <location filename="../reihenaufnahme/mainwindow.ui" line="208"/>
@@ -140,7 +140,7 @@
     <message>
         <location filename="../reihenaufnahme/mainwindow.cpp" line="178"/>
         <source>Finnished in %1 milliseconds.</source>
-        <translation>Finnished в %1 миллисекунды.</translation>
+        <translation>Закончится через %1 миллисекунды.</translation>
     </message>
 </context>
 <context>
@@ -166,7 +166,7 @@
     <message>
         <location filename="../reihenaufnahme/plugins/pluginsconfigdialog.ui" line="14"/>
         <source>Plugins Config</source>
-        <translation>плагины Config</translation>
+        <translation>расширение конфигурации</translation>
     </message>
     <message>
         <location filename="../reihenaufnahme/plugins/pluginsconfigdialog.ui" line="24"/>
@@ -200,7 +200,7 @@
     <message>
         <location filename="../reihenaufnahme/plugins/pluginsconfigdialog.ui" line="103"/>
         <source>Output</source>
-        <translation>выходной</translation>
+        <translation>вывод данных</translation>
     </message>
 </context>
 <context>
@@ -231,7 +231,7 @@
     <message>
         <location filename="../reihenaufnahme/translation.cpp" line="89"/>
         <source>english</source>
-        <translation>французский</translation>
+        <translation>русский</translation>
     </message>
     <message>
         <source>English</source>

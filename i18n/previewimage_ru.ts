@@ -11,7 +11,7 @@
     <message>
         <location filename="../plugins/previewimage/previewimage.cpp" line="51"/>
         <source>Plugin to update previewimage in exif data.</source>
-        <translation>Плагин для обновления previewimage в данных EXIF.</translation>
+        <translation>Плагин для обновления предварительного протсмотра в данных EXIF.</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../plugins/previewimage/widget.ui" line="33"/>
         <source>change nothing</source>
-        <translation>ничего не изменится</translation>
+        <translation>ничего не изменять</translation>
     </message>
     <message>
         <location filename="../plugins/previewimage/widget.ui" line="43"/>
@@ -29,7 +29,7 @@
     <message>
         <location filename="../plugins/previewimage/widget.ui" line="50"/>
         <source>update exifdatas previewimage</source>
-        <translation>Обновление EXIF данные изображения предварительного просмотра</translation>
+        <translation>Обновление EXIF данных изображения предварительного просмотра</translation>
     </message>
 </context>
 </TS>

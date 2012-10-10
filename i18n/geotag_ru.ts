@@ -6,12 +6,12 @@
     <message>
         <location filename="../plugins/geotag/geotag.cpp" line="38"/>
         <source>Geotag</source>
-        <translation type="unfinished"></translation>
+        <translation>Место съёмки</translation>
     </message>
     <message>
         <location filename="../plugins/geotag/geotag.cpp" line="50"/>
         <source>Plugin to change geotag info in exif data.</source>
-        <translation type="unfinished"></translation>
+        <translation>Плагин для изменения данных о  месте съёмки в Exifданные. </translation>
     </message>
 </context>
 <context>
@@ -19,38 +19,38 @@
     <message>
         <location filename="../plugins/geotag/widget.ui" line="20"/>
         <source>GPSLongitude:</source>
-        <translation type="unfinished"></translation>
+        <translation>GPS долгота</translation>
     </message>
     <message>
         <location filename="../plugins/geotag/widget.ui" line="27"/>
         <location filename="../plugins/geotag/widget.ui" line="40"/>
         <source>00.000000; </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../plugins/geotag/widget.ui" line="53"/>
         <source>GPSLatitude:</source>
-        <translation type="unfinished"></translation>
+        <translation>GPS широта</translation>
     </message>
     <message>
         <location filename="../plugins/geotag/widget.ui" line="60"/>
         <source>goto</source>
-        <translation type="unfinished"></translation>
+        <translation>перейти к</translation>
     </message>
     <message>
         <location filename="../plugins/geotag/widget.ui" line="69"/>
         <source>zoom in</source>
-        <translation type="unfinished"></translation>
+        <translation>увеличить</translation>
     </message>
     <message>
         <location filename="../plugins/geotag/widget.ui" line="76"/>
         <source>zoom out</source>
-        <translation type="unfinished"></translation>
+        <translation>уменьшить</translation>
     </message>
     <message>
         <location filename="../plugins/geotag/widget.ui" line="98"/>
         <source>Change Geotag in Exif data</source>
-        <translation type="unfinished"></translation>
+        <translation>Изменить данные о  месте съёмки в Exifданные</translation>
     </message>
 </context>
 </TS>

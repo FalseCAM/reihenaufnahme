@@ -6,7 +6,7 @@
     <message>
         <location filename="../plugins/blur/blur.cpp" line="39"/>
         <source>Blur</source>
-        <translation>пятно</translation>
+        <translation>Нечёткость</translation>
     </message>
     <message>
         <location filename="../plugins/blur/blur.cpp" line="51"/>
@@ -34,7 +34,7 @@
     <message>
         <location filename="../plugins/blur/widget.ui" line="63"/>
         <source>blur</source>
-        <translation>пятно</translation>
+        <translation>нечёткий</translation>
     </message>
     <message>
         <location filename="../plugins/blur/widget.ui" line="73"/>

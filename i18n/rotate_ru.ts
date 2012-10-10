@@ -19,12 +19,12 @@
     <message utf8="true">
         <location filename="../plugins/rotate/widget.ui" line="20"/>
         <source>rotate 180° clockwise</source>
-        <translation>поворачиваться на 180 ° по часовой стрелке</translation>
+        <translation>повернуть на 180 ° по часовой стрелке</translation>
     </message>
     <message>
         <location filename="../plugins/rotate/widget.ui" line="27"/>
         <source>rotate clockwise by angle</source>
-        <translation>вращаться по часовой стрелке на угол</translation>
+        <translation>повернуть на градус по часовой стрелке</translation>
     </message>
     <message>
         <location filename="../plugins/rotate/widget.ui" line="34"/>
@@ -34,12 +34,12 @@
     <message>
         <location filename="../plugins/rotate/widget.ui" line="44"/>
         <source>rotate counterclockwise</source>
-        <translation>вращаться против часовой стрелки</translation>
+        <translation>повернуть против часовой стрелки</translation>
     </message>
     <message>
         <location filename="../plugins/rotate/widget.ui" line="51"/>
         <source>rotate clockwise</source>
-        <translation>вращаться по часовой стрелке</translation>
+        <translation>повернуть по часовой стрелке</translation>
     </message>
     <message utf8="true">
         <location filename="../plugins/rotate/widget.ui" line="61"/>
