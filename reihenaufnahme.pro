@@ -1,3 +1,2 @@
 TEMPLATE	= subdirs
-SUBDIRS         = reihenaufnahme plugins \
-    message
+SUBDIRS         = message reihenaufnahme plugins
