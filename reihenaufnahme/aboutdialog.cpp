@@ -31,17 +31,16 @@ AboutDialog::AboutDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->versionLabel->setText(Reihenaufnahme::applicationVersion());
+    manager = 0;
     initAbout();
     initAuthors();
     initThanksto();
     initLicense();
-    initUpdates();
 }
 
 AboutDialog::~AboutDialog()
 {
     delete ui;
-    delete manager;
 }
 
 void AboutDialog::initLicense(){
@@ -116,8 +115,9 @@ void AboutDialog::initThanksto(){
 }
 
 void AboutDialog::initUpdates(){
+    // Loads Version information from website: http://reihenaufnahme.falsecam.net/version
     ui->thisVersionLabel->setText(tr("This Version: ") + Reihenaufnahme::applicationVersion());
-    manager = new QNetworkAccessManager(this);
+    QNetworkAccessManager *manager = new QNetworkAccessManager(this);
     QNetworkReply *reply = manager->get(QNetworkRequest(QUrl("http://reihenaufnahme.falsecam.net/version")));
     QEventLoop loop;
     QObject::connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
@@ -125,9 +125,16 @@ void AboutDialog::initUpdates(){
     ui->htmlVersionLabel->setText(reply->readAll());
     QObject::disconnect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
     delete reply;
+    delete manager;
 }
 
 void AboutDialog::on_pushButton_clicked()
 {
     this->close();
+}
+
+void AboutDialog::on_tabWidget_currentChanged(int index)
+{
+    // When tab for updates is selected, download update information from website.
+    initUpdates();
 }

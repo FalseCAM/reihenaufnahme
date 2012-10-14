@@ -36,6 +36,7 @@ public:
     
 private slots:
     void on_pushButton_clicked();
+    void on_tabWidget_currentChanged(int index);
 
 private:
     Ui::AboutDialog *ui;
