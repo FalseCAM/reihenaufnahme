@@ -1,7 +1,7 @@
+TEMPLATE = lib
+CONFIG += qt plugin
 TARGET          = filechooser
-load(qt_plugin)
-QT              += core widgets
-
+QT              += core widgets gui
 INCLUDEPATH	+= ../../reihenaufnahme
 
 HEADERS         = filechooser.h \

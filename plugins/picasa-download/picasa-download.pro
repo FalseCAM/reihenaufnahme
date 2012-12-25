@@ -1,5 +1,6 @@
+TEMPLATE = lib
+CONFIG += qt plugin
 TARGET          = picasa-download
-load(qt_plugin)
 QT              += core widgets network
 INCLUDEPATH	+= ../../reihenaufnahme
 

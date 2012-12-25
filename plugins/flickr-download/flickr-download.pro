@@ -1,5 +1,6 @@
+TEMPLATE = lib
+CONFIG += qt plugin
 TARGET          = flickr-download
-load(qt_plugin)
 QT              += core widgets network webkit
 INCLUDEPATH	+= ../../reihenaufnahme
 

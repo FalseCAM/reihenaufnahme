@@ -242,6 +242,7 @@ void PluginLoader::loadInputPlugins(QString dir) {
         QPluginLoader pluginLoader(pluginsDir.absoluteFilePath(fileName));
         QObject *plugin = pluginLoader.instance();
 
+
         if (plugin) {
             // loads Plugins
             InputPlugin *plugin_ = qobject_cast<
@@ -252,6 +253,8 @@ void PluginLoader::loadInputPlugins(QString dir) {
             } else {
                 delete plugin_;
             }
+        }else{
+            Message::debug("[Pluginloader] not loaded input plugin: " + pluginLoader.errorString());
         }
     }
 }

@@ -1,5 +1,6 @@
+TEMPLATE = lib
+CONFIG += qt plugin
 TARGET          = rename-album
-load(qt_plugin)
 QT              += core widgets
 
 INCLUDEPATH	+= ../../reihenaufnahme

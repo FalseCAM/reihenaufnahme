@@ -1,5 +1,6 @@
+TEMPLATE = lib
+CONFIG += qt plugin
 TARGET          = overlay
-load(qt_plugin)
 QT              += core widgets
 INCLUDEPATH	+= ../../reihenaufnahme
 HEADERS         = overlay.h \

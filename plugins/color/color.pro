@@ -1,5 +1,6 @@
+TEMPLATE = lib
+CONFIG += qt plugin
 TARGET          = color
-load(qt_plugin)
 QT              += core widgets
 
 INCLUDEPATH	+= ../../reihenaufnahme
